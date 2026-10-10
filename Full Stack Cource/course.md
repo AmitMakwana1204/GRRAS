@@ -32,7 +32,7 @@ JQUERY - 4 LOC
 -------------------- Networking ------------------------
 how browser work, what is protocols, Domain, localhost, how Backend + Froentend connecting through browser 
 
------------------------ backend ----------------------
+----------------------- backend ---------------------------
 1. Node JS - node js is run - time environment 
 2. Express JS - for fast and better execution we use Express js with node js fundamental 
 for building APIs
