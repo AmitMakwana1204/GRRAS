@@ -58,4 +58,3 @@ for building APIs
 
 ---------------------- advance -----------------
 1. github - version control, git command (basic to advance), linux command (for easy to use system)
-
