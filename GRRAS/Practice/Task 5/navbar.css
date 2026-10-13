@@ -1,0 +1,40 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Navbar-Home {
+    background-color: rgb(174, 255, 154);
+    height: 100vh;
+    position: relative;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    height: auto;
+    width: 100%;
+    background-color: rgb(239, 158, 255);
+    color: rgb(55, 67, 245);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    padding: 10px 20px;
+}
+
+.navbar ul li.hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(247, 8, 8);
+}
+
+
