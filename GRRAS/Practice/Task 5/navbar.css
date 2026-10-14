@@ -6,12 +6,12 @@
 
 .Navbar-Home {
     background-color: rgb(174, 255, 154);
-    height: 100vh;
+    height: auto;
     position: relative;
 }
 
 .navbar {
-    position: fixed;
+    position: sticky;
     top: 0;
     height: auto;
     width: 100%;
