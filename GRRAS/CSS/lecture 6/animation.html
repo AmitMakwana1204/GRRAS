@@ -1,0 +1,73 @@
+<!-- // animation is a part of advance css , here we use all properties of CSS.
+- width, height, opacity, position, margin, padding, border, color, etcc...
+
+// animation name : identifies the animation
+// animation Duration : 3s means animation takes 3 seconds of time.
+// animation Delay: 2s waiting before starting animation.
+// animation Iteration counts: 4 repeats itself, infinite repeats forever. 
+// animation timing function: ease-in-out makes movement smooth
+//animation direction: alternate (moves forward and then backward)
+// Fill Mode: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+.container{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0px 20px 0px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: moveBox;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes moveBox {
+  0% {
+    left: 0;
+background-color: brown;
+transform: rotate(0deg);
+  }  
+
+  50% {
+    left: 50%;
+    background-color: orange;
+    transform: rotate(120deg);
+  }
+  100% {
+    left: 70%;
+    background-color: pink;
+    transform: rotate(360deg);
+  }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <div class="box"> </div>
+    </div>
+</body>
+</html>
+
+<!-- // overflow : proving scrolling 
+- auto : automatic 
+- hidden: 
+
+- overflow-x: 
+- overflow -y:  -->
