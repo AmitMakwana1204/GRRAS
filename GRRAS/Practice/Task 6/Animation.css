@@ -1,0 +1,72 @@
+
+.Container{   
+  
+     width: 100%;
+     overflow: hidden;
+     Background-color: rgb(0, 0, 0);
+     padding: 20px 0px 20px 0px;
+}
+.Box{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-delay: 15s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes move{
+    0%{
+        left: 0%;
+        transform: rotate(0deg);
+        Background-color: red;
+    }
+    25%{
+        left: 25%;
+        transform: rotate(90deg);
+        Background-color: rgb(179, 255, 0);
+    }
+    50%{
+        left: 50%;
+        transform: rotate(180deg);
+        Background-color: rgb(13, 247, 235);
+    }
+    75%{
+        left: 75%;
+        transform: rotate(270deg);
+        Background-color: rgb(204, 0, 255);
+    }
+    100%{
+        left: 100%;
+        transform: rotate(360deg);
+        Background-color: rgb(255, 0, 98);
+    }
+}
+symbol{
+    font-size: 100px;
+    position: relative;
+    animation-name: emoji;
+    animation-duration: 10s;
+    animation-delay: 15s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes emoji{
+    0%{
+        left: 0%;
+    }
+    25%{
+        left: 25%;
+    }
+    50%{
+        left: 50%;
+    }
+    75%{
+        left: 75%;
+    }
+    100%{
+        left: 100%;
+    }
+}
