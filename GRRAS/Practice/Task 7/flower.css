@@ -23,7 +23,7 @@ body {
     margin: 30px auto;
 }
 
-/* Flower petals */
+/* Flower */
 .flower {
     position: absolute;
     width: 150px;
@@ -92,7 +92,7 @@ body {
     background-color: #ffeb3b;
 }
 
-/* Stem */
+
 .Line {
     position: absolute;
     width: 12px;
