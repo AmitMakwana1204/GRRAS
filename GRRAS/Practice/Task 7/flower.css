@@ -40,7 +40,6 @@ body {
     height: 85px;
     border-radius: 75%;
     background-color:rgb(241, 109, 131);
-    border: 3px solid white;
     transform: rotate(180deg);
 }
 
@@ -52,7 +51,6 @@ body {
     height: 85px;
     border-radius: 75%;
     background-color:rgb(241, 109, 131);
-    border: 3px solid white;
     transform: rotate(90deg);
 }
 
@@ -64,7 +62,6 @@ body {
     height: 85px;
     border-radius: 75%;
     background-color:rgb(241, 109, 131);
-    border: 3px solid white;
     transform: rotate(180deg);
 }
 
@@ -76,20 +73,19 @@ body {
     height: 85px;
     border-radius: 75%;
     background-color:rgb(241, 109, 131);
-    border: 3px solid white;
     transform: rotate(90deg);
 }
 
 /* Flower center */
 .center {
     position: absolute;
-    width: 60px;
-    height: 60px;
-    top: 40px;
-    left: 45px;
+    width: 80px;
+    height: 80px;
+    top: 30px;
+    left: 35px;
     border-radius: 100%;
-    border: 3px solid black;
-    background-color: #ffeb3b;
+    border: 3px solid rgb(252, 208, 208);
+    background-color: rgb(250, 252, 145);
 }
 
 
