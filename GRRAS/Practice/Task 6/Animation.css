@@ -11,7 +11,7 @@
     width: 100px;
     background-color: red;
     animation-name: move;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-delay: 3s;
     animation-iteration-count: infinite;
     animation-play-state: running;
@@ -51,7 +51,7 @@ symbol{
     font-size: 100px;
     position: relative;
     animation-name: emoji;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-delay: 3s;
     animation-iteration-count: infinite;
     animation-play-state: running;
