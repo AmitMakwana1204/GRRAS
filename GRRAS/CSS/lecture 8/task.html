@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flower Design Task for students</title>
+    <style>
+
+body {
+    background: linear-gradient(to bottom, #fff0f5, #d8f3dc);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: darkgreen;
+    margin: 30px;
+}
+
+.flower {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 50px auto 0;
+}
+
+.petal {
+    width: 70px;
+    height: 90px;
+    background: linear-gradient(to bottom, #ff69b4, #ff1493);
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.p1 {
+    top: 0;
+    left: 65px;
+}
+
+.p2 {
+    top: 35px;
+    left: 110px;
+    transform: rotate(72deg);
+}
+
+.p3 {
+    top: 85px;
+    left: 95px;
+    transform: rotate(144deg);
+}
+
+.p4 {
+    top: 85px;
+    left: 35px;
+    transform: rotate(216deg);
+}
+
+.p5 {
+    top: 35px;
+    left: 20px;
+    transform: rotate(288deg);
+}
+
+.center {
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(to right, yellow, orange);
+    border-radius: 50%;
+    position: absolute;
+    top: 65px;
+    left: 72px;
+    border: 2px solid brown;
+    box-sizing: border-box;
+}
+
+.stem {
+    width: 12px;
+    height: 180px;
+    background: linear-gradient(to right, green, lightgreen);
+    margin: -10px auto 0;
+    border: 2px solid darkgreen;
+    box-sizing: border-box;
+}
+
+.leaf {
+    width: 70px;
+    height: 35px;
+    background: linear-gradient(to right, green, lightgreen);
+    border-radius: 0 100% 0 100%;
+    position: relative;
+    top: -120px;
+    left: 50px;
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+
+    <h1>My Beautiful Flower</h1>
+
+    <div class="flower">
+        <div class="petal p1"></div>
+        <div class="petal p2"></div>
+        <div class="petal p3"></div>
+        <div class="petal p4"></div>
+        <div class="petal p5"></div>
+        <div class="center"></div>
+    </div>
+
+    <div class="stem"></div>
+
+    <div class="leaf"></div>
+
+</body>
+</html>
