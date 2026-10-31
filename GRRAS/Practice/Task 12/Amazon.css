@@ -1,121 +1,93 @@
+
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e3e6e6;
 }
 
 header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    width: 100%;
 }
 
 .navbar {
-    height: 60px;
+    min-height: 60px;
     background-color: #131921;
     color: white;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
-    align-items: center;
-}
-
-.nav-logo {
-    width: 130px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    padding: 3px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo p {
-    width: 20px;
-    height: 20px;
-    display: flex;
-    font-size: 15px;
-    font-weight: 700;
-    color: white;
-}
-
-.logo img {
-    height: 50px;
-    width: 100px;
-    object-fit: contain;
+    gap: 10px;
+    padding: 5px 10px;
 }
 
 .Border {
-    border: 1.5px solid transparent;
+    border: 1px solid transparent;
+    padding: 5px;
+    cursor: pointer;
 }
 
 .Border:hover {
-    border: 1.5px solid white;
+    border: 1px solid white;
 }
 
-.nav-address {
-    height: 50px;
+.nav-logo {
+    width: 115px;
+}
+
+.logo {
     display: flex;
     align-items: center;
 }
 
-.address {
-    padding: 5px;
+.logo img {
+    width: 100px;
+    height: 40px;
 }
 
 .address-first {
+    font-size: 12px;
     color: #cccccc;
     margin-left: 20px;
-    font-size: 0.85rem;
-}
-
-.address-second {
-    font-size: 1rem;
-    font-weight: 700;
 }
 
 .add-icon {
     display: flex;
     align-items: center;
-    gap: 4px;
+    gap: 5px;
+}
+
+.address-second {
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .nav-fill {
-    width: 1000px;
-    margin: 0 15px;
+    flex: 1;
+    min-width: 100px;
 }
 
 .nav-searchbar {
     height: 40px;
-    width: 100%;
     display: flex;
     border-radius: 5px;
     overflow: hidden;
-    background-color: white;
-}
-
-.nav-searchbar:focus-within {
-    outline: 3px solid #febd69;
 }
 
 .nav-search-scope {
-    width: 110px;
-    background-color: #e6e6e6;
+    width: 130px;
 }
 
 .search-dropdown {
-    height: 100%;
     width: 100%;
-    border: none;
-    outline: none;
-    padding: 0 8px;
+    height: 100%;
     background-color: #e6e6e6;
-    color: #333333;
+    border: none;
+    padding: 0 5px;
     cursor: pointer;
 }
 
@@ -124,83 +96,79 @@ header {
 }
 
 .nav-input {
-    height: 100%;
     width: 100%;
+    height: 100%;
     border: none;
-    padding: 0 12px;
-    font-size: 1rem;
-}
-
-.nav-search-submit {
-    width: 50px;
-    background-color: #febd69;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
 }
 
 .nav-search-submit button {
+    width: 45px;
     height: 100%;
-    width: 100%;
     border: none;
     background-color: #febd69;
-    color: #131921;
-    font-size: 1.3rem;
+    font-size: 18px;
     cursor: pointer;
-}
-
-.nav-search-submit button:hover {
-    background-color: #f3a847;
 }
 
 .nav-language {
-    height: 50px;
-    padding: 5px;
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 0.9rem;
-    font-weight: 700;
-    cursor: pointer;
-}
-
-.nav-account {
-    height: 50px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
+    font-weight: bold;
 }
 
 .nav-first {
-    font-size: 0.75rem;
+    font-size: 12px;
 }
 
 .nav-second {
-    font-size: 0.9rem;
-    font-weight: 700;
-}
-
-.nav-returns {
-    height: 50px;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
 .nav-cart {
-    height: 50px;
-    padding: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 5px;
-    font-size: 0.9rem;
-    font-weight: 700;
-    cursor: pointer;
+    font-weight: bold;
 }
 
 .nav-cart i {
-    font-size: 30px;
+    font-size: 28px;
 }
+
+.panel {
+    min-height: 40px;
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 5px 15px;
+}
+
+.panel-all {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+}
+
+.panel-links {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.panel-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
 
