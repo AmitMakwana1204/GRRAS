@@ -171,4 +171,69 @@ header {
     font-size: 13px;
 }
 
+main {
+    box-sizing: border-box;
+    margin: 0 10%;
+    background-color: white;
+}
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 15px;
+}
+
+.main-banner {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    gap: 15px;
+}
+
+.main-banner img {
+    width: 300px;
+    height: 450px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.main-banner1 {
+    align-items: start;
+    flex-direction: row;
+    width:400px;
+    height: 550px;
+    background-color: #c4bd65;
+    overflow: auto;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.banner-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(3, 3, 3);
+    margin-bottom: 10px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.product-card img {
+    width: 160px;
+    height: 130px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
