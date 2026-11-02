@@ -173,7 +173,7 @@ header {
 
 main {
     box-sizing: border-box;
-    margin: 0 10%;
+    margin: 0 6%;
     background-color: white;
 }
 
@@ -198,15 +198,21 @@ main {
     cursor: pointer;
 }
 
+.Deal-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
 .main-banner1 {
-    align-items: start;
     flex-direction: row;
     width:400px;
     height: 550px;
     background-color: #c4bd65;
     overflow: auto;
     border-radius: 20px;
-    padding: 15px;
+    padding: 5px;
+    margin: 5px;
 }
 
 .banner-text {
@@ -217,23 +223,228 @@ main {
     font-weight: bold;
     color: rgb(3, 3, 3);
     margin-bottom: 10px;
+    padding: 0 5px;
 }
 
+.main-product-card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+    padding: 0 2px;
+}
 .product-card {
+    width: 180px;
+    height: 240px;
     display: flex;
+    align-items: center;
     flex-direction: column;
-    background-color: white;
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin:5px;
+}
+
+.product-card1 {
+    width: 180px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    margin:5px;
 }
 
 .product-card img {
     width: 160px;
     height: 130px;
+    padding: 10px;
+}
+
+.product-card1 img {
+    width: 180px;
+    height: 180px;
+    padding: 5px;
     border-radius: 10px;
-    margin-bottom: 10px;
 }
 
 .product-details {
     display: flex;
     flex-direction: column;
     background-color: white;
+}
+
+.product-details1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    width: 160px;
+    height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+
+.product-title1 {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+}
+
+.product-price .price{
+    font-size: 18px;
+    color: #0f1111;
+    padding-left: 10px;
+}
+
+.product-price .mrp{
+    font-size: 14px;
+    color: #555;
+    padding-left: 10px;
+}
+
+.product-offer {
+    display: flex;
+}
+
+.product-offer .discount {
+    width: 60px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.89);
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.product-offer .deal-name {
+    width: 75px;
+    height: auto;
+    color: red;
+    font-size: 12px;
+}
+
+
+.footer {
+    width: 100%;
+    background-color: #232f3e;
+    color: white;
+}
+
+.footer-content {
+    width: 100%;
+    height: 50px;
+    background-color: #37475a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-center {
+    width: 100%;
+}
+
+.footer-links {
+    max-width: 1100px;
+    margin: auto;
+    padding: 45px 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.footer-column a {
+    color: #dddddd;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-column a:hover,
+.footer-bottom-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    width: 100%;
+    min-height: 100px;
+    border-top: 1px solid #3a4553;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-logo-image img {
+    width: 100px;   
+}
+
+.footer-language,
+.footer-country {
+    height: 35px;
+    padding: 0 12px;
+    border: 1px solid #848e9a;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+}
+
+.footer-country img {
+    width: 20px;
+}
+
+.footer-bottom {
+    width: 100%;
+    background-color: #131a22;
+    padding: 25px 10px;
+    text-align: center;
+}
+
+.footer-bottom-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 12px;
+}
+
+.footer-bottom-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-copyright p {
+    font-size: 12px;
+    color: #dddddd;
 }
