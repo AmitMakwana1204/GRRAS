@@ -1,8 +1,8 @@
 # 👋 Hi, I'm Amit Makwana
 
-### 💻 Aspiring MERN Stack Developer
+### 💻 Aspiring Full Stack Developer | MERN Stack Learner
 
-Welcome to my GitHub profile! I am currently learning MERN Stack Development at **GRRAS IT Solutions, Ahmedabad**.
+Welcome to my GitHub profile! I am currently learning Full Stack Development at **GRRAS IT Solutions, Ahmedabad**.
 
 I am passionate about web development and love creating websites, building projects, and learning new technologies.
 
@@ -34,19 +34,16 @@ I am passionate about web development and love creating websites, building proje
 
 ## 🛠️ Technologies & Skills
 
-**Currently Practicing**
-
+**Completed Learning:**
 - HTML5
 - CSS3
-- Bootstrap
+- Bootstrap 5
 
-**Currently Learning**
-
+**Currently Learning:**
 - JavaScript
+
+**Upcoming Technologies:**
 - React.js
-
-**Upcoming Technologies**
-
 - Node.js
 - Express.js
 - MongoDB
@@ -56,9 +53,9 @@ I am passionate about web development and love creating websites, building proje
 ## 📚 Currently Learning
 
 - JavaScript Fundamentals
-- React.js
-- MERN Stack Development
-- Frontend and Backend Development
+- DOM Manipulation
+- Programming Logic
+- Frontend Development
 
 ---
 
@@ -82,3 +79,5 @@ To become a successful Full Stack Developer and build real-world web application
 ---
 
 ⭐ Thank you for visiting my GitHub profile!
+
+**Happy Coding! 🚀**
