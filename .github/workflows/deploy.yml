@@ -1,11 +1,10 @@
 
-name: Deploy All Projects to GitHub Pages
+name: Deploy All Projects
 
 on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -29,25 +28,29 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup GitHub Pages
+      - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Prepare All Projects
+      - name: Prepare Projects
         run: |
-          mkdir -p _site/Project/Amazon
+          mkdir -p _site/Project
 
-          # Copy all project folders
+          # Copy all projects
           cp -r Project/* _site/Project/
 
-          # Create Amazon homepage
+          # Amazon homepage
           cp Project/Amazon/Amazon.html \
              _site/Project/Amazon/index.html
+
+          # Portfolio homepage
+          cp Project/Portfolio/Portfolio.html \
+             _site/Project/Portfolio/index.html
 
           # Disable Jekyll
           touch _site/.nojekyll
 
       - name: Upload Website
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
