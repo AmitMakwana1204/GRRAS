@@ -18,14 +18,14 @@ concurrency:
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Pages
@@ -34,14 +34,14 @@ jobs:
       - name: Prepare Website
         run: |
           mkdir -p _site
-          cp -r Projects _site/
-          cp index.html _site/index.html
+          cp -r Project _site/ || true
+          cp -r GRRAS _site/ || true
 
       - name: Upload Website
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
-      - name: Deploy Website
+      - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
