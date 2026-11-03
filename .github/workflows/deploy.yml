@@ -1,10 +1,11 @@
 
-name: Deploy All Projects
+name: Deploy All Projects to GitHub Pages
 
 on:
   push:
     branches:
       - main
+
   workflow_dispatch:
 
 permissions:
@@ -13,7 +14,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: github-pages
   cancel-in-progress: true
 
 jobs:
@@ -25,23 +26,31 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Prepare Website
+      - name: Prepare All Projects
         run: |
-          mkdir -p _site
-          cp -r Project _site/ || true
-          cp -r GRRAS _site/ || true
+          mkdir -p _site/Project/Amazon
+
+          # Copy all project folders
+          cp -r Project/* _site/Project/
+
+          # Create Amazon homepage
+          cp Project/Amazon/Amazon.html \
+             _site/Project/Amazon/index.html
+
+          # Disable Jekyll
+          touch _site/.nojekyll
 
       - name: Upload Website
         uses: actions/upload-pages-artifact@v3
         with:
           path: _site
 
-      - name: Deploy
+      - name: Deploy Website
         id: deployment
         uses: actions/deploy-pages@v4
