@@ -1,0 +1,102 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.jio-navbar {
+    background-color: #b0002c;
+    min-height: 73px;
+    padding: 0 14px;
+}
+
+.navbar-brand {
+    margin-right: 42px;
+    text-decoration: none;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.jio-logo {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    gap: 12px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 10px !important;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.right-menu {
+    gap: 15px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #800020;
+    border-radius: 30px;
+    height: 40px;
+    width: 200px;
+    padding: 0 15px;
+    gap: 12px;
+}
+
+.search-box input {
+    width: 100%;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+
+.search-box input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.search-box i {
+    color: white;
+    font-size: 17px;
+}
+
+.search-box .mic {
+    font-size: 18px;
+}
+
+.profile-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-icon i {
+    color: #111111;
+    font-size: 20px;
+}
