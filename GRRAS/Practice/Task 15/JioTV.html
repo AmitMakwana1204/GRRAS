@@ -8,25 +8,29 @@
 
     <title>JioTV: Watch Live TV Channels, Sports, Movies And News Online</title>
 
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<navbar>
+<header>
+
     <!-- Main Navbar -->
 
     <nav class="jio-navbar">
 
         <!-- Top Navbar -->
 
-        <div class="top-navbar" id="#">
+        <div class="top-navbar">
 
             <!-- Hamburger Button -->
 
@@ -128,7 +132,6 @@
 
     </nav>
 
-
     <!-- Mobile Side Drawer -->
 
     <div class="offcanvas offcanvas-start mobile-drawer"
@@ -140,7 +143,13 @@
 
         <div class="offcanvas-header drawer-header">
 
-            <h5 class="offcanvas-title" id="mobileDrawerLabel"></h5>
+            <h5 class="offcanvas-title" id="mobileDrawerLabel">
+
+                <img src="./JioTV-logo.png" class="logo" alt="JioTV Logo">
+
+                JioTV
+
+            </h5>
 
             <button type="button"
                 class="drawer-close"
@@ -182,66 +191,404 @@
         </div>
 
     </div>
-</navbar>
+
+</header>
+
+
+<!-- Main Content -->
 
 <main>
-    
-    <div class="carousel-section">
 
-<div id="myCarousel" class="carousel slide">
+    <!-- Hero Carousel -->
 
-    <div class="carousel-inner">
+    <section class="carousel-section">
 
-        <!-- First Slide -->
-        <div class="carousel-item active">
+        <div id="myCarousel" class="carousel" data-bs-ride="carousel">
 
-            <div class="carouselimg">
+            <!-- Carousel Indicators -->
 
-                <img src="./For you/Asia-Cup-U19-India-vs-Nepal-Sony-LIV-carousal.jpg" alt="India vs Nepal">
+            <div class="carousel-indicators">
+
+                <button type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1">
+                </button>
+
+                <button type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2">
+                </button>
+
+                <button type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3">
+                </button>
+
+                <button type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4">
+                </button>
+
+                <button type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="4"
+                    aria-label="Slide 5">
+                </button>
+
+                <button type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="5"
+                    aria-label="Slide 6">
+                </button>
+
+                <button type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="6"
+                    aria-label="Slide 7">
+                </button>
+
+                <button type="button"
+                    data-bs-target="#myCarousel"
+                    data-bs-slide-to="7"
+                    aria-label="Slide 8">
+                </button>
+
+            </div>
+
+
+            <!-- Carousel Inner -->
+
+            <div class="carousel-inner">
+
+                <!-- First Slide: 1, 2, 3 -->
+
+                <div class="carousel-item active">
+
+                    <div class="carouselimg">
+
+                        <div class="side-card">
+                            <img src="./For you/Asia-Cup-U19-India-vs-Nepal-Sony-LIV-carousal.jpg" alt="">
+                        </div>
+
+                        <div class="main-card">
+                            <img src="./For you/Asia-Cup-U19-Pakistan-vs-UAE-carousal.jpg" alt="">
+                        </div>
+
+                        <div class="side-card">
+                            <img src="./For you/ChukarMereMannKo_StarUtsav_Carousel.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Second Slide: 2, 3, 4 -->
+
+                <div class="carousel-item">
+
+                    <div class="carouselimg">
+
+                        <div class="side-card">
+                            <img src="./For you/Asia-Cup-U19-Pakistan-vs-UAE-carousal.jpg" alt="">
+                        </div>
+
+                        <div class="main-card">
+                            <img src="./For you/ChukarMereMannKo_StarUtsav_Carousel.jpg" alt="">
+                        </div>
+
+                        <div class="side-card">
+                            <img src="./For you/IndianIdol_SonyPal_Carousel.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Third Slide: 3, 4, 5 -->
+
+                <div class="carousel-item">
+
+                    <div class="carouselimg">
+
+                        <div class="side-card">
+                            <img src="./For you/ChukarMereMannKo_StarUtsav_Carousel.jpg" alt="">
+                        </div>
+
+                        <div class="main-card">
+                            <img src="./For you/IndianIdol_SonyPal_Carousel.jpg" alt="">
+                        </div>
+
+                        <div class="side-card">
+                            <img src="./For you/LaughterChefsS3_Crown_Carousel.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Fourth Slide: 4, 5, 6 -->
+
+                <div class="carousel-item">
+
+                    <div class="carouselimg">
+
+                        <div class="side-card">
+                            <img src="./For you/IndianIdol_SonyPal_Carousel.jpg" alt="">
+                        </div>
+
+                        <div class="main-card">
+                            <img src="./For you/LaughterChefsS3_Crown_Carousel.jpg" alt="">
+                        </div>
+
+                        <div class="side-card">
+                            <img src="./For you/RoroAurHero_BhootMastiZabardast_EpicKids_Carousal.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Fifth Slide: 5, 6, 7 -->
+
+                <div class="carousel-item">
+
+                    <div class="carouselimg">
+
+                        <div class="side-card">
+                            <img src="./For you/LaughterChefsS3_Crown_Carousel.jpg" alt="">
+                        </div>
+
+                        <div class="main-card">
+                            <img src="./For you/RoroAurHero_BhootMastiZabardast_EpicKids_Carousal.jpg" alt="">
+                        </div>
+
+                        <div class="side-card">
+                            <img src="./For you/The-Strangers-Chapter-3_Premium-Banner_JioTv.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Sixth Slide: 6, 7, 8 -->
+
+                <div class="carousel-item">
+
+                    <div class="carouselimg">
+
+                        <div class="side-card">
+                            <img src="./For you/RoroAurHero_BhootMastiZabardast_EpicKids_Carousal.jpg" alt="">
+                        </div>
+
+                        <div class="main-card">
+                            <img src="./For you/The-Strangers-Chapter-3_Premium-Banner_JioTv.jpg" alt="">
+                        </div>
+
+                        <div class="side-card">
+                            <img src="./For you/Udne-ki-aasha.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Seventh Slide: 7, 8, 1 -->
+
+                <div class="carousel-item">
+
+                    <div class="carouselimg">
+
+                        <div class="side-card">
+                            <img src="./For you/The-Strangers-Chapter-3_Premium-Banner_JioTv.jpg" alt="">
+                        </div>
+
+                        <div class="main-card">
+                            <img src="./For you/Udne-ki-aasha.jpg" alt="">
+                        </div>
+
+                        <div class="side-card">
+                            <img src="./For you/Asia-Cup-U19-India-vs-Nepal-Sony-LIV-carousal.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Eighth Slide: 8, 1, 2 -->
+
+                <div class="carousel-item">
+
+                    <div class="carouselimg">
+
+                        <div class="side-card">
+                            <img src="./For you/Udne-ki-aasha.jpg" alt="">
+                        </div>
+
+                        <div class="main-card">
+                            <img src="./For you/Asia-Cup-U19-India-vs-Nepal-Sony-LIV-carousal.jpg" alt="">
+                        </div>
+
+                        <div class="side-card">
+                            <img src="./For you/Asia-Cup-U19-Pakistan-vs-UAE-carousal.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Previous Button -->
+
+            <button class="carousel-control-prev"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+
+            <!-- Next Button -->
+
+            <button class="carousel-control-next"
+                type="button"
+                data-bs-target="#myCarousel"
+                data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Diwali Dhamaka -->
+
+    <section class="content-section">
+
+        <div class="section-heading">
+
+            <h2>Diwali Dhamaka</h2>
+
+            <a href="#">See All</a>
+
+        </div>
+
+        <div class="content-list">
+
+            <div class="content-card">
+
+                <img src="./For you/Asia-Cup-U19-India-vs-Nepal-Sony-LIV-carousal.jpg"
+                    alt="India vs Nepal">
+
+            </div>
+
+            <div class="content-card">
+
+                <img src="./For you/Asia-Cup-U19-Pakistan-vs-UAE-carousal.jpg"
+                    alt="Pakistan vs UAE">
+
+            </div>
+
+            <div class="content-card">
+
+                <img src="./For you/ChukarMereMannKo_StarUtsav_Carousel.jpg"
+                    alt="Chukar Mere Mann Ko">
+
+            </div>
+
+            <div class="content-card">
+
+                <img src="./For you/IndianIdol_SonyPal_Carousel.jpg"
+                    alt="Indian Idol">
+
+            </div>
+
+            <div class="content-card">
+
+                <img src="./For you/LaughterChefsS3_Crown_Carousel.jpg"
+                    alt="Laughter Chefs">
+
+            </div>
+
+            <div class="content-card">
+
+                <img src="./For you/Udne-ki-aasha.jpg"
+                    alt="Udne Ki Aasha">
 
             </div>
 
         </div>
 
-        <!-- Second Slide -->
-        <div class="carousel-item">
+    </section>
 
-            <div class="carouselimg">
+</main>
 
-                <img src="./For you/Asia-Cup-U19-Pakistan-vs-UAE-carousal.jpg" alt="Pakistan vs UAE">
 
-            </div>
 
-        </div>
+<!-- Bottom App Banner -->
+
+<div class="app-banner">
+
+    <h3>Experience non-stop entertainment on JioTV app!</h3>
+
+    <div class="app-links">
+
+        <a href="#" class="store-btn">
+
+            <i class="fa-brands fa-google-play"></i>
+
+            <span>
+                <small>GET IT ON</small>
+                Google Play
+            </span>
+
+        </a>
+
+        <a href="#" class="store-btn">
+
+            <i class="fa-brands fa-apple"></i>
+
+            <span>
+                <small>Download on the</small>
+                App Store
+            </span>
+
+        </a>
 
     </div>
 
-    <!-- Previous -->
-    <button class="carousel-control-prev"
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide="prev">
+    <button class="banner-close" type="button">
 
-        <span class="carousel-control-prev-icon"></span>
-
-    </button>
-
-    <!-- Next -->
-    <button class="carousel-control-next"
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide="next">
-
-        <span class="carousel-control-next-icon"></span>
+        <i class="fa-solid fa-xmark"></i>
 
     </button>
 
 </div>
-    </div>
 
-</main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap JavaScript Bundle -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
