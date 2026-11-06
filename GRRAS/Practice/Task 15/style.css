@@ -1,4 +1,8 @@
 
+/* ==============================
+   GLOBAL CSS
+============================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,15 +13,43 @@ body {
     font-family: Arial, sans-serif;
 }
 
+navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+/* ==============================
+   MAIN NAVBAR
+============================== */
+
 .jio-navbar {
+    width: 100%;
     background-color: #b0002c;
-    min-height: 73px;
-    padding: 0 14px;
 }
 
+
+/* ==============================
+   TOP NAVBAR
+============================== */
+
+.top-navbar {
+    display: flex;
+    align-items: center;
+    min-height: 73px;
+    padding: 0 14px;
+    background-color: #b0002c;
+}
+
+
+/* ==============================
+   LOGO
+============================== */
+
 .navbar-brand {
+    display: flex;
+    align-items: center;
     margin-right: 42px;
     text-decoration: none;
+    flex-shrink: 0;
 }
 
 .logo {
@@ -30,25 +62,51 @@ body {
     color: white;
     font-size: 16px;
     font-weight: bold;
+    margin-left: 5px;
 }
 
-.navbar-nav {
+
+/* ==============================
+   DESKTOP NAVIGATION
+============================== */
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
     gap: 12px;
+    list-style: none;
+    margin: 0 auto 0 0;
+    padding: 0;
 }
 
-.navbar-nav .nav-link {
-    color: white !important;
+.desktop-nav li {
+    flex-shrink: 0;
+}
+
+.desktop-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
     font-size: 15px;
     font-weight: bold;
-    padding: 8px 10px !important;
+    padding: 8px 10px;
 }
 
-.navbar-nav .nav-link:hover {
+.desktop-nav a:hover {
     text-decoration: underline;
+    color: white;
 }
+
+
+/* ==============================
+   SEARCH BOX
+============================== */
 
 .right-menu {
+    display: flex;
+    align-items: center;
     gap: 15px;
+    flex-shrink: 0;
 }
 
 .search-box {
@@ -80,11 +138,17 @@ body {
 .search-box i {
     color: white;
     font-size: 17px;
+    flex-shrink: 0;
 }
 
 .search-box .mic {
     font-size: 18px;
 }
+
+
+/* ==============================
+   PROFILE ICON
+============================== */
 
 .profile-icon {
     height: 40px;
@@ -94,9 +158,372 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .profile-icon i {
     color: #111111;
     font-size: 20px;
+}
+
+
+/* ==============================
+   HAMBURGER BUTTON
+============================== */
+
+.mobile-menu-toggle {
+    display: none;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.mobile-menu-toggle:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* ==============================
+   MOBILE NAVIGATION
+============================== */
+
+.mobile-nav-scroll {
+    display: none;
+}
+
+
+/* ==============================
+   TABLET RESPONSIVE
+============================== */
+
+@media (max-width: 991.98px) {
+
+    /* Top Navbar */
+
+    .top-navbar {
+        min-height: 63px;
+        padding: 0 10px;
+    }
+
+    /* Hamburger */
+
+    .mobile-menu-toggle {
+        display: block;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    /* Logo */
+
+    .navbar-brand {
+        margin-right: auto;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .jio-logo {
+        font-size: 16px;
+    }
+
+    /* Desktop Menu Hide */
+
+    .desktop-nav {
+        display: none;
+    }
+
+    /* Search and Profile */
+
+    .right-menu {
+        gap: 10px;
+    }
+
+    .search-box {
+        width: 200px;
+        height: 40px;
+    }
+
+    .profile-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    /* Mobile Navigation Show */
+
+    .mobile-nav-scroll {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scrollbar-width: none;
+        background-color: #b0002c;
+        padding: 0 14px;
+    }
+
+    .mobile-nav-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-nav-scroll ul {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: max-content;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-nav-scroll li {
+        flex-shrink: 0;
+    }
+
+    .mobile-nav-scroll a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 8px;
+    }
+
+    .mobile-nav-scroll a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 575.98px) {
+
+    .top-navbar {
+        min-height: 60px;
+        padding: 0 8px;
+    }
+
+    /* Hamburger */
+
+    .mobile-menu-toggle {
+        font-size: 19px;
+        margin-right: 8px;
+    }
+
+    /* Logo */
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .jio-logo {
+        font-size: 15px;
+    }
+
+    /* Right Menu */
+
+    .right-menu {
+        gap: 8px;
+    }
+
+    .search-box {
+        width: 175px;
+        height: 38px;
+        padding: 0 12px;
+        gap: 9px;
+    }
+
+    .search-box input {
+        font-size: 13px;
+    }
+
+    .search-box i {
+        font-size: 16px;
+    }
+
+    .profile-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .profile-icon i {
+        font-size: 17px;
+    }
+
+    /* Horizontal Menu */
+
+    .mobile-nav-scroll {
+        padding: 0 14px;
+    }
+
+    .mobile-nav-scroll ul {
+        gap: 10px;
+    }
+
+    .mobile-nav-scroll a {
+        font-size: 14px;
+        padding: 9px 8px;
+    }
+
+}
+
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 380px) {
+
+    .mobile-menu-toggle {
+        margin-right: 5px;
+        font-size: 18px;
+    }
+
+    .jio-logo {
+        font-size: 14px;
+    }
+
+    .search-box {
+        width: 135px;
+        padding: 0 9px;
+        gap: 7px;
+    }
+
+    .search-box input {
+        font-size: 11px;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE SIDE DRAWER
+============================== */
+
+.mobile-drawer {
+    width: 80% !important;
+    max-width: 410px;
+    background-color: white;
+    border: none !important;
+}
+
+
+/* Drawer Header */
+
+.drawer-header {
+    height: 60px;
+    background-color: #b0002c;
+    padding: 0 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* Close Button */
+
+.drawer-close {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.drawer-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* Drawer Body */
+
+.drawer-body {
+    padding: 0 24px;
+}
+
+
+/* Drawer Menu */
+
+.drawer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.drawer-menu li {
+    border-bottom: 1px solid #dddddd;
+}
+
+.drawer-menu li:last-child {
+    border-bottom: none;
+}
+
+.drawer-menu li a {
+    display: block;
+    padding: 22px 0;
+    text-decoration: none;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.drawer-menu li a:hover {
+    color: #b0002c;
+}
+
+
+/* Drawer Backdrop */
+
+.offcanvas-backdrop.show {
+    opacity: 0.7;
+}
+
+
+/* ==============================
+   DESKTOP DRAWER HIDE
+============================== */
+
+@media (min-width: 992px) {
+
+    .mobile-drawer {
+        display: none !important;
+    }
+
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+
+}
+}
+
+main {
+
+.carouselimg {
+    display: flex;
+    gap: 30px;
+    margin: 40px 0;
+    padding: 0 16px;
+}
+
+.carouselimg img {
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
 }
