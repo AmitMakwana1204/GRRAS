@@ -97,6 +97,10 @@ header {
     color: white;
 }
 
+.desktop-nav a.active {
+    color: white;
+    text-decoration: underline;
+}
 
 /* ==============================
    SEARCH BOX
@@ -194,6 +198,11 @@ header {
 
 .mobile-nav-scroll {
     display: none;
+}
+
+.mobile-nav-scroll a.active {
+    color: white;
+    text-decoration: underline;
 }
 
 
@@ -482,6 +491,7 @@ header {
 
 .drawer-menu li a:hover {
     color: #b0002c;
+    text-decoration: underline;
 }
 
 
@@ -543,12 +553,8 @@ main {
 /* Side Images */
 
 .side-card {
-    width: 23.5%;
-    height: 488px;
-    flex-shrink: 0;
+    border-radius: 30px;
     overflow: hidden;
-    border-radius: 15px;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
 }
 
 .side-card img {
@@ -781,5 +787,361 @@ main {
     color: white;
     margin-left: 15px;
 }
+
+
+/* ============================= */
+/* TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 991.98px) {
+
+    /* Hero Carousel */
+
+    .carouselimg {
+        gap: 18px;
+    }
+
+    .side-card {
+        width: 23.5%;
+        height: 350px;
+        flex-shrink: 0;
+    }
+
+    .main-card {
+        width: 50%;
+        height: 350px;
+    }
+
+    /* Diwali Dhamaka */
+
+    .content-section {
+        padding: 0 3% 70px;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .content-card {
+        min-width: 230px;
+        height: 140px;
+    }
+
+    /* Bottom Banner */
+
+    .app-banner {
+        gap: 15px;
+    }
+
+}
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 767.98px) {
+
+    /* Hero Carousel */
+
+    .carousel-section {
+        padding-top: 25px;
+        padding-bottom: 55px;
+    }
+
+    .carouselimg {
+        gap: 12px;
+    }
+
+    .side-card {
+        width: 23.5%;
+        height: 230px;
+        border-radius: 15px;
+    }
+
+    .main-card {
+        width: 50%;
+        height: 230px;
+        border-radius: 15px;
+    }
+
+    /* Carousel Controls */
+
+    .carousel-section .carousel-control-prev,
+    .carousel-section .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-section .carousel-control-prev {
+        left: 8px;
+    }
+
+    .carousel-section .carousel-control-next {
+        right: 8px;
+    }
+
+    .carousel-section .carousel-control-prev-icon,
+    .carousel-section .carousel-control-next-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    /* Carousel Indicators */
+
+    .carousel-section .carousel-indicators {
+        bottom: -38px;
+    }
+
+    /* Diwali Dhamaka */
+
+    .content-section {
+        padding: 0 3% 60px;
+    }
+
+    .section-heading {
+        margin-bottom: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 22px;
+    }
+
+    .section-heading a {
+        font-size: 13px;
+    }
+
+    .content-list {
+        gap: 10px;
+    }
+
+    .content-card {
+        min-width: 200px;
+        height: 125px;
+    }
+
+    /* Bottom Banner */
+
+    .app-banner {
+        min-height: 55px;
+        gap: 10px;
+        padding: 8px 10px;
+    }
+
+    .app-banner h3 {
+        font-size: 15px;
+    }
+
+    .app-links {
+        gap: 8px;
+    }
+
+    .store-btn {
+        height: 32px;
+        padding: 3px 7px;
+        gap: 5px;
+    }
+
+    .store-btn i {
+        font-size: 19px;
+    }
+
+    .store-btn span {
+        font-size: 10px;
+    }
+
+    .store-btn small {
+        font-size: 7px;
+    }
+
+    .banner-close {
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+    }
+
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 575.98px) {
+
+    /* Hero Carousel */
+
+    .carousel-section {
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+
+    .carouselimg {
+        gap: 10px;
+    }
+
+    .side-card {
+        height: 170px;
+        border-radius: 10px;
+    }
+
+    .main-card {
+        height: 170px;
+        border-radius: 10px;
+    }
+
+    /* Carousel Controls */
+
+    .carousel-section .carousel-control-prev,
+    .carousel-section .carousel-control-next {
+        width: 25px;
+        height: 25px;
+    }
+
+    .carousel-section .carousel-control-prev {
+        left: 5px;
+    }
+
+    .carousel-section .carousel-control-next {
+        right: 5px;
+    }
+
+    /* Indicators */
+
+    .carousel-section .carousel-indicators {
+        bottom: -32px;
+    }
+
+    .carousel-section .carousel-indicators button {
+        width: 6px;
+        height: 6px;
+    }
+
+    .carousel-section .carousel-indicators button.active {
+        width: 18px;
+        height: 6px;
+    }
+
+    /* Diwali Dhamaka */
+
+    .content-section {
+        padding: 0 4% 50px;
+    }
+
+    .section-heading h2 {
+        font-size: 19px;
+    }
+
+    .section-heading a {
+        font-size: 12px;
+    }
+
+    .content-card {
+        min-width: 165px;
+        height: 105px;
+        border-radius: 10px;
+    }
+
+    /* Bottom Banner */
+
+    .app-banner {
+        min-height: 50px;
+        gap: 6px;
+        padding: 6px;
+    }
+
+    .app-banner h3 {
+        font-size: 12px;
+    }
+
+    .app-links {
+        gap: 5px;
+    }
+
+    .store-btn {
+        height: 29px;
+        padding: 3px 5px;
+        gap: 4px;
+    }
+
+    .store-btn i {
+        font-size: 16px;
+    }
+
+    .store-btn span {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .store-btn small {
+        font-size: 6px;
+    }
+
+    .banner-close {
+        width: 22px;
+        height: 22px;
+        margin-left: 2px;
+        font-size: 11px;
+    }
+
+}
+
+
+/* ============================= */
+/* EXTRA SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 380px) {
+
+    /* Hero Carousel */
+
+    .side-card {
+        height: 145px;
+    }
+
+    .main-card {
+        height: 145px;
+    }
+
+    .carouselimg {
+        gap: 8px;
+    }
+
+    /* Diwali Dhamaka */
+
+    .section-heading h2 {
+        font-size: 17px;
+    }
+
+    .content-card {
+        min-width: 145px;
+        height: 95px;
+    }
+
+    /* Bottom Banner */
+
+    .app-banner {
+        gap: 4px;
+    }
+
+    .app-banner h3 {
+        font-size: 10px;
+    }
+
+    .store-btn {
+        padding: 3px 4px;
+    }
+
+    .store-btn i {
+        font-size: 14px;
+    }
+
+    .banner-close {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
 
 }
