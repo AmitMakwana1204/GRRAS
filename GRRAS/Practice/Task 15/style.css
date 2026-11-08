@@ -553,6 +553,8 @@ main {
 /* Side Images */
 
 .side-card {
+    width: 100%;
+    height: auto;
     border-radius: 30px;
     overflow: hidden;
 }
@@ -641,76 +643,6 @@ main {
     height: 7px;
     border-radius: 10px;
     background-color: #e50019;
-}
-
-
-/* ============================= */
-/* DIWALI DHAMAKA SECTION */
-/* ============================= */
-
-.content-section {
-    width: 100%;
-    padding: 0 4.2% 80px;
-    background-color: #fff;
-}
-
-.section-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.section-heading h2 {
-    font-size: 28px;
-    font-weight: 800;
-    color: #180909;
-    margin: 0;
-}
-
-.section-heading a {
-    color: #a90023;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.section-heading a:hover {
-    text-decoration: underline;
-}
-
-/* Content Cards */
-
-.content-list {
-    width: 100%;
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    scrollbar-width: none;
-}
-
-.content-list::-webkit-scrollbar {
-    display: none;
-}
-
-.content-card {
-    min-width: 255px;
-    height: 155px;
-    border-radius: 15px;
-    overflow: hidden;
-    flex-shrink: 0;
-    cursor: pointer;
-}
-
-.content-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.content-card:hover img {
-    transform: scale(1.05);
 }
 
 
@@ -1144,4 +1076,56 @@ main {
 }
 
 
+}
+
+.diwali-cards {
+    margin: 10px 5%;
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text .Offers {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text .OffersAll {
+    padding: 2px 15px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #700017;
+    background-color: transparent;
+}
+
+.text a:hover {
+    background-color: #fcdee0;
+    cursor: pointer;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    overflow-x: auto;
+    background-size: cover;
+}
+
+.cards .images {
+    padding: 0 8px 0 0;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    gap: 10px;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    background-color: #111111;
+    border-radius: 14px;
+    object-fit: fill;
+}
 }
