@@ -1079,53 +1079,138 @@ main {
 }
 
 .diwali-cards {
-    margin: 10px 5%;
+  margin: 10px 5%;
+
 
 .text {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .text .Offers {
-    font-size: 30px;
-    font-weight: 900;
+  margin: 0;
+  font-size: 30px;
+  font-weight: 900;
 }
 
 .text .OffersAll {
-    padding: 2px 15px;
-    border-radius: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #700017;
-    background-color: transparent;
+  padding: 2px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #700017;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
 }
 
-.text a:hover {
-    background-color: #fcdee0;
-    cursor: pointer;
+.text .OffersAll:hover {
+  background-color: #fcdee0;
+  cursor: pointer;
 }
 
+/* Horizontal scroll strip */
 .cards {
-    position: relative;
-    display: flex;
-    overflow-x: auto;
-    background-size: cover;
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 8px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
-.cards .images {
-    padding: 0 8px 0 0;
-    width: 400px;
-    height: 250px;
-    display: flex;
-    gap: 10px;
+/* Hide default scrollbars for an app-like feel */
+.cards::-webkit-scrollbar {
+  height: 6px;
 }
 
-.images img {
+.cards::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Landscape format (Diwali Dhamaka & Best of Entertainment) */
+.landscape-cards img {
+  flex: 0 0 400px;
+  width: 400px;
+  height: 250px;
+  background-color: #111111;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* Portrait/Poster format (Highlights & Premium Picks) */
+.portrait-cards img {
+  flex: 0 0 200px;
+  width: 200px;
+  height: 300px;
+  background-color: #111111;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.round-cards img{
+  flex: 0 0 300px;          /* Scaled down to fit row nicely */
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;     /* 50% ensures a true circle */
+  background-color: #e5e5e5;
+  object-fit: contain;      /* "contain" prevents logos from getting cropped */
+  padding: 14px; 
+  cursor: pointer;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .diwali-cards {
+    margin: 10px 3%;
+  }
+
+  .text .Offers {
+    font-size: 22px;
+  }
+
+  .landscape-cards img {
+    flex: 0 0 280px;
+    width: 280px;
+    height: 180px;
+  }
+
+  .portrait-cards img {
+    flex: 0 0 140px;
+    width: 140px;
+    height: 210px;
+  }
+}
+
+}
+
+footer {
     width: 100%;
-    height: 100%;
-    background-color: #111111;
-    border-radius: 14px;
-    object-fit: fill;
+    height: 600px;
+    background-color: #e5e5e5;
+    margin-top: 50px;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.part1 {
+    flex: 1.2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.part2 {
+    flex: 0.6;
+    display: flex;
+    justify-content: start;
+    width: 100%;
 }
