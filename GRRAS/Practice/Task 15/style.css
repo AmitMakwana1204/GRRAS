@@ -1201,7 +1201,7 @@ footer {
     height: 600px;
     background-color: #e5e5e5;
     margin-top: 50px;
-
+    padding-top: 40px;
 
 .footer {
     display: flex;
@@ -1216,9 +1216,32 @@ footer {
 }
 
 .part2 {
-    flex: 0.6;
+    flex: 0.8;
+}
+
+.part2 .Contect {
     display: flex;
-    justify-content: start;
-    width: 100%;
+    flex-direction: column;
+}
+
+.part2 .contect-content {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.part2 .linkpart {
+    margin-bottom: 20px;
+}
+
+.linkpart a {
+    padding: 7px;
+    border-radius: 100%;
+    color: white;
+    background-color: #AA0023;
+}
+
+.linkpart a:hover {
+    background-color: #5c0113;
+    cursor: pointer;
 }
 }
