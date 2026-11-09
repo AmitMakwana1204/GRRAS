@@ -554,7 +554,7 @@ main {
 
 .side-card {
     width: 100%;
-    height: auto;
+    height: 350px;
     border-radius: 30px;
     overflow: hidden;
 }
@@ -568,8 +568,8 @@ main {
 /* Center Image */
 
 .main-card {
-    width: 50%;
-    height: 488px;
+    width: 40%;
+    height: 350px;
     flex-shrink: 0;
     overflow: hidden;
     border-radius: 15px;
@@ -1185,6 +1185,13 @@ main {
     width: 140px;
     height: 210px;
   }
+
+  .round-cards img {
+    flex: 0 0 180px;
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+  }
 }
 
 }
@@ -1194,7 +1201,7 @@ footer {
     height: 600px;
     background-color: #e5e5e5;
     margin-top: 50px;
-}
+
 
 .footer {
     display: flex;
@@ -1213,4 +1220,5 @@ footer {
     display: flex;
     justify-content: start;
     width: 100%;
+}
 }
