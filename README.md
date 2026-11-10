@@ -76,7 +76,7 @@ To become a successful Full Stack Developer and build real-world web application
 - 💼 [LinkedIn](https://www.linkedin.com/in/amit-makwana-aa255b407/)
 - 🐙 [GitHub](https://github.com/AmitMakwana1204)
 
----
+----
 
 ⭐ Thank you for visiting my GitHub profile!
 
