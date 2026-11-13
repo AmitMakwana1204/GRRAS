@@ -1,0 +1,739 @@
+/* ==============================
+   GLOBAL CSS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+/* ==============================
+   MAIN NAVBAR
+============================== */
+
+.jio-navbar {
+    width: 100%;
+    background-color: #b0002c;
+}
+
+
+/* ==============================
+   TOP NAVBAR
+============================== */
+
+.top-navbar {
+    display: flex;
+    align-items: center;
+    min-height: 73px;
+    padding: 0 14px;
+    background-color: #b0002c;
+}
+
+
+/* ==============================
+   LOGO
+============================== */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-right: 42px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.jio-logo {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+/* ==============================
+   DESKTOP NAVIGATION
+============================== */
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    margin: 0 auto 0 0;
+    padding: 0;
+}
+
+.desktop-nav li {
+    flex-shrink: 0;
+}
+
+.desktop-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+
+.desktop-nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.desktop-nav a.active {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ==============================
+   SEARCH BOX
+============================== */
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #800020;
+    border-radius: 30px;
+    height: 40px;
+    width: 200px;
+    padding: 0 15px;
+    gap: 12px;
+}
+
+.search-box input {
+    width: 100%;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+
+.search-box input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.search-box i {
+    color: white;
+    font-size: 17px;
+    flex-shrink: 0;
+}
+
+.search-box .mic {
+    font-size: 18px;
+}
+
+
+/* ==============================
+   PROFILE ICON
+============================== */
+
+.profile-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.profile-icon i {
+    color: #111111;
+    font-size: 20px;
+}
+
+
+/* ==============================
+   HAMBURGER BUTTON
+============================== */
+
+.mobile-menu-toggle {
+    display: none;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.mobile-menu-toggle:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* ==============================
+   MOBILE NAVIGATION
+============================== */
+
+.mobile-nav-scroll {
+    display: none;
+}
+
+.mobile-nav-scroll a.active {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   TABLET RESPONSIVE
+============================== */
+
+@media (max-width: 991.98px) {
+
+    /* Top Navbar */
+
+    .top-navbar {
+        min-height: 63px;
+        padding: 0 10px;
+    }
+
+    /* Hamburger */
+
+    .mobile-menu-toggle {
+        display: block;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    /* Logo */
+
+    .navbar-brand {
+        margin-right: auto;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .jio-logo {
+        font-size: 16px;
+    }
+
+    /* Desktop Menu Hide */
+
+    .desktop-nav {
+        display: none;
+    }
+
+    /* Search and Profile */
+
+    .right-menu {
+        gap: 10px;
+    }
+
+    .search-box {
+        width: 200px;
+        height: 40px;
+    }
+
+    .profile-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    /* Mobile Navigation Show */
+
+    .mobile-nav-scroll {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scrollbar-width: none;
+        background-color: #b0002c;
+        padding: 0 14px;
+    }
+
+    .mobile-nav-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-nav-scroll ul {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: max-content;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-nav-scroll li {
+        flex-shrink: 0;
+    }
+
+    .mobile-nav-scroll a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 8px;
+    }
+
+    .mobile-nav-scroll a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 575.98px) {
+
+    .top-navbar {
+        min-height: 60px;
+        padding: 0 8px;
+    }
+
+    /* Hamburger */
+
+    .mobile-menu-toggle {
+        font-size: 19px;
+        margin-right: 8px;
+    }
+
+    /* Logo */
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .jio-logo {
+        font-size: 15px;
+    }
+
+    /* Right Menu */
+
+    .right-menu {
+        gap: 8px;
+    }
+
+    .search-box {
+        width: 175px;
+        height: 38px;
+        padding: 0 12px;
+        gap: 9px;
+    }
+
+    .search-box input {
+        font-size: 13px;
+    }
+
+    .search-box i {
+        font-size: 16px;
+    }
+
+    .profile-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .profile-icon i {
+        font-size: 17px;
+    }
+
+    /* Horizontal Menu */
+
+    .mobile-nav-scroll {
+        padding: 0 14px;
+    }
+
+    .mobile-nav-scroll ul {
+        gap: 10px;
+    }
+
+    .mobile-nav-scroll a {
+        font-size: 14px;
+        padding: 9px 8px;
+    }
+
+}
+
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 380px) {
+
+    .mobile-menu-toggle {
+        margin-right: 5px;
+        font-size: 18px;
+    }
+
+    .jio-logo {
+        font-size: 14px;
+    }
+
+    .search-box {
+        width: 135px;
+        padding: 0 9px;
+        gap: 7px;
+    }
+
+    .search-box input {
+        font-size: 11px;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE SIDE DRAWER
+============================== */
+
+.mobile-drawer {
+    width: 80% !important;
+    max-width: 410px;
+    background-color: white;
+    border: none !important;
+}
+
+
+/* Drawer Header */
+
+.drawer-header {
+    height: 60px;
+    background-color: #b0002c;
+    padding: 0 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* Close Button */
+
+.drawer-close {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.drawer-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* Drawer Body */
+
+.drawer-body {
+    padding: 0 24px;
+}
+
+
+/* Drawer Menu */
+
+.drawer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.drawer-menu li {
+    border-bottom: 1px solid #dddddd;
+}
+
+.drawer-menu li:last-child {
+    border-bottom: none;
+}
+
+.drawer-menu li a {
+    display: block;
+    padding: 22px 0;
+    text-decoration: none;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.drawer-menu li a:hover {
+    color: #b0002c;
+    text-decoration: underline;
+}
+
+
+/* Drawer Backdrop */
+
+.offcanvas-backdrop.show {
+    opacity: 0.7;
+}
+
+
+/* ==============================
+   DESKTOP DRAWER HIDE
+============================== */
+
+@media (min-width: 992px) {
+
+    .mobile-drawer {
+        display: none !important;
+    }
+
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+
+}
+}
+
+.diwali-cards {
+  margin: 10px 5%;
+
+  /* TV Guide */
+.Top-filters {
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+.Right-filters {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    font-size: medium;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-weight: 800;
+    color: #700017;
+    border: 1px solid gainsboro;
+    transition: border-color 0.2s ease;
+}
+
+.Right-filters:hover {
+    border: 1px solid #700017;
+    cursor: pointer;
+}
+
+.Left-filters {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.Left-filters .categories,
+.Left-filters .languages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.Left-filters .filter {
+    font-size: small;
+    color: gray;
+}
+
+.Left-filters .categories-All {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    font-size: medium;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+}
+
+.Left-filters .border-line {
+    border-bottom: 2px solid black;
+}
+
+}
+
+}
+
+footer {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+/* Main Container: Flex layout to keep Links and Right Section side-by-side */
+.footer-container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Left side: Grid of links */
+.footer-links-container {
+  flex: 1.4;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #111111;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-list li {
+  padding: 7px 2px;
+}
+
+.link-list li a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link-list li:hover {
+  background-color: #dfdddd;
+}
+
+/* Right side: Connect & Apps */
+.part2 {
+  flex: 0.6;
+  min-width: 270px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 900;
+  color: #111111;
+}
+
+/* Round Social Icons */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #9c0022;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.social-icon:hover {
+    background-color: #700017;
+}
+
+/* App Badges */
+.app-links {
+  max-width: 300px;
+  height: 50px;
+  display: grid;
+  flex-shrink: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.app-badge img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+
+/* Responsive Breakpoints */
+@media (max-width: 1080px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .part2 {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .app-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+}

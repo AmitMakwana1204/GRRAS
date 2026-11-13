@@ -1,0 +1,784 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JioTV: Watch Live TV Channels, Sports, Movies And News Online</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header>
+
+    <!-- Main Navbar -->
+
+    <nav class="jio-navbar">
+
+        <!-- Top Navbar -->
+
+        <div class="top-navbar">
+
+            <!-- Hamburger Button -->
+
+            <button class="mobile-menu-toggle"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileDrawer"
+                aria-controls="mobileDrawer">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <!-- Logo -->
+
+            <a class="navbar-brand d-flex align-items-center" href="./JioTV.html">
+
+                <img src="./JioTV-logo.png" class="logo" alt="JioTV Logo">
+
+                <span class="jio-logo">JioTV</span>
+
+            </a>
+
+            <!-- Desktop Navigation -->
+
+            <ul class="desktop-nav">
+
+                <li><a href="./JioTV.html">For You</a></li>
+                <li><a href="./TV.html">TV Guide</a></li>
+                <li><a href="./Premium.html">Premium</a></li>
+                <li><a href="./Movies.html">Movies</a></li>
+                <li><a href="./Sports.html">Sports</a></li>
+                <li><a href="./Special.html">Specials</a></li>
+                <li><a href="./kids.html">Kids</a></li>
+                <li><a href="./News.html">News</a></li>
+                <li><a href="./Shows.html">Shows</a></li>
+
+            </ul>
+
+            <!-- Right Menu -->
+
+            <div class="d-flex align-items-center right-menu">
+
+                <div class="search-box">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input type="text" placeholder="Search JioTV">
+
+                    <i class="fa-solid fa-microphone mic"></i>
+
+                </div>
+
+                <div class="profile-icon">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Mobile Horizontal Navigation -->
+
+        <div class="mobile-nav-scroll">
+
+            <ul>
+
+                <li><a href="#" class="active">For You</a></li>
+                <li><a href="#">TV Guide</a></li>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Specials</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Shows</a></li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Mobile Side Drawer -->
+
+    <div class="offcanvas offcanvas-start mobile-drawer"
+        tabindex="-1"
+        id="mobileDrawer"
+        aria-labelledby="mobileDrawerLabel">
+
+        <!-- Drawer Header -->
+
+        <div class="offcanvas-header drawer-header">
+
+            <h5 class="offcanvas-title text-white fw-bold text-center"
+                style="font-size: medium;"
+                id="mobileDrawerLabel">
+
+                <img src="./JioTV-logo.png" class="logo" alt="JioTV Logo">
+
+                JioTV
+
+            </h5>
+
+            <button type="button"
+                class="drawer-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Drawer Body -->
+
+        <div class="offcanvas-body drawer-body">
+
+            <ul class="drawer-menu">
+
+                <li><a href="#" class="active">For You</a></li>
+                <li><a href="#">TV Guide</a></li>
+                <li><a href="#">Premium</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Specials</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Shows</a></li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</header>
+
+<main>
+
+<section class="carousel-section">
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+
+        <!-- Carousel Inner -->
+        <div class="carousel-inner">
+
+            <!-- First Slide: 8, 1 (News/Live Sports Main), 2 -->
+            <div class="carousel-item active">
+                <div class="carouselimg">
+                    <div class="side-card">
+                        <img src="./For you/Udne-ki-aasha.jpg" alt="">
+                    </div>
+                    <div class="main-card">
+                        <img src="./For you/Asia-Cup-U19-India-vs-Nepal-Sony-LIV-carousal.jpg" alt="">
+                    </div>
+                    <div class="side-card">
+                        <img src="./For you/Asia-Cup-U19-Pakistan-vs-UAE-carousal.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Slide: 1, 2 (News/Live Sports), 3 -->
+            <div class="carousel-item">
+                <div class="carouselimg">
+                    <div class="side-card">
+                        <img src="./For you/Asia-Cup-U19-India-vs-Nepal-Sony-LIV-carousal.jpg" alt="">
+                    </div>
+                    <div class="main-card">
+                        <img src="./For you/Asia-Cup-U19-Pakistan-vs-UAE-carousal.jpg" alt="">
+                    </div>
+                    <div class="side-card">
+                        <img src="./For you/ChukarMereMannKo_StarUtsav_Carousel.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Slide: 2, 3, 4 -->
+            <div class="carousel-item">
+                <div class="carouselimg">
+                    <div class="side-card">
+                        <img src="./For you/Asia-Cup-U19-Pakistan-vs-UAE-carousal.jpg" alt="">
+                    </div>
+                    <div class="main-card">
+                        <img src="./For you/ChukarMereMannKo_StarUtsav_Carousel.jpg" alt="">
+                    </div>
+                    <div class="side-card">
+                        <img src="./For you/IndianIdol_SonyPal_Carousel.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Slide: 3, 4, 5 -->
+            <div class="carousel-item">
+                <div class="carouselimg">
+                    <div class="side-card">
+                        <img src="./For you/ChukarMereMannKo_StarUtsav_Carousel.jpg" alt="">
+                    </div>
+                    <div class="main-card">
+                        <img src="./For you/IndianIdol_SonyPal_Carousel.jpg" alt="">
+                    </div>
+                    <div class="side-card">
+                        <img src="./For you/LaughterChefsS3_Crown_Carousel.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fifth Slide: 4, 5, 6 -->
+            <div class="carousel-item">
+                <div class="carouselimg">
+                    <div class="side-card">
+                        <img src="./For you/IndianIdol_SonyPal_Carousel.jpg" alt="">
+                    </div>
+                    <div class="main-card">
+                        <img src="./For you/LaughterChefsS3_Crown_Carousel.jpg" alt="">
+                    </div>
+                    <div class="side-card">
+                        <img src="./For you/RoroAurHero_BhootMastiZabardast_EpicKids_Carousal.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sixth Slide: 5, 6, 7 -->
+            <div class="carousel-item">
+                <div class="carouselimg">
+                    <div class="side-card">
+                        <img src="./For you/LaughterChefsS3_Crown_Carousel.jpg" alt="">
+                    </div>
+                    <div class="main-card">
+                        <img src="./For you/RoroAurHero_BhootMastiZabardast_EpicKids_Carousal.jpg" alt="">
+                    </div>
+                    <div class="side-card">
+                        <img src="./For you/The-Strangers-Chapter-3_Premium-Banner_JioTv.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seventh Slide: 6, 7, 8 -->
+            <div class="carousel-item">
+                <div class="carouselimg">
+                    <div class="side-card">
+                        <img src="./For you/RoroAurHero_BhootMastiZabardast_EpicKids_Carousal.jpg" alt="">
+                    </div>
+                    <div class="main-card">
+                        <img src="./For you/The-Strangers-Chapter-3_Premium-Banner_JioTv.jpg" alt="">
+                    </div>
+                    <div class="side-card">
+                        <img src="./For you/Udne-ki-aasha.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eighth Slide: 7, 8, 1 -->
+            <div class="carousel-item">
+                <div class="carouselimg">
+                    <div class="side-card">
+                        <img src="./For you/The-Strangers-Chapter-3_Premium-Banner_JioTv.jpg" alt="">
+                    </div>
+                    <div class="main-card">
+                        <img src="./For you/Udne-ki-aasha.jpg" alt="">
+                    </div>
+                    <div class="side-card">
+                        <img src="./For you/Asia-Cup-U19-India-vs-Nepal-Sony-LIV-carousal.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Previous Button -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <!-- Next Button -->
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+</section>
+
+<section class="diwali-cards">
+  <div class="container-fluid">
+
+    <!-- Row 1: Live News (Top Priority for News Section) -->
+    <div class="text">
+      <h2 class="Offers">Live News</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards round-cards">
+      <img src="./For you/Live/24991374199dde171ec01a80f814f0b0.webp" alt="Live News 1">
+      <img src="./For you/Live/25e346463f8ad1e6f39767033fcc1e44.webp" alt="Live News 2">
+      <img src="./For you/Live/29573422cfd3319690f725a947bd5aa3.webp" alt="Live News 3">
+      <img src="./For you/Live/2e15b2655b3b470fc273449070f75b05.webp" alt="Live News 4">
+      <img src="./For you/Live/538f218c8bb989b5a15b8cb8973efc0d.webp" alt="Live News 5">
+      <img src="./For you/Live/6175def11aae7910d9720691c3cd3f8d.webp" alt="Live News 6">
+      <img src="./For you/Live/6c5fd6f2f6a0010effcf24d819867659.webp" alt="Live News 7">
+      <img src="./For you/Live/a9fa3daded246e068b62f5fe420e633b.webp" alt="Live News 8">
+      <img src="./For you/Live/b0ec63c158e0eff10054a8209158e471.webp" alt="Live News 9">
+      <img src="./For you/Live/bf034a36751e5117ad28f769585bb3ac.webp" alt="Live News 10">
+      <img src="./For you/Live/d30b867fdc73635349a36e3d0d40656a.webp" alt="Live News 11">
+      <img src="./For you/Live/d8e12bd29c0d7a69a492e754a5a05c18.webp" alt="Live News 12">
+      <img src="./For you/Live/d907bfcc579400cea50a6ce492e20594.webp" alt="Live News 13">
+      <img src="./For you/Live/e17feda2c00089e21a460c7928aad7bc.webp" alt="Live News 14">
+    </div>
+
+    <!-- Row 2: India Tour Highlights (Current/Sports News) -->
+    <div class="text">
+      <h2 class="Offers">India Tour of New Zealand 2026 Highlights</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards portrait-cards">
+      <img src="./For you/india/0586d05ad2d309fb40642f21457ec768.webp" alt="Highlight 1">
+      <img src="./For you/india/2201a74d6c34ac888c0a9f478b9f331e.webp" alt="Highlight 2">
+      <img src="./For you/india/279f90090eec7197f5f19b080c252ba9.webp" alt="Highlight 3">
+      <img src="./For you/india/2bea6a1f4dea74627bff6c1f40b2adb7.webp" alt="Highlight 4">
+      <img src="./For you/india/2bf03fab4b42a80c09f38623253ab8a6.webp" alt="Highlight 5">
+      <img src="./For you/india/31c5d66fcd1833e165acc052539cd814.webp" alt="Highlight 6">
+      <img src="./For you/india/35c1c06589865e01bfad996fef5a9a71.webp" alt="Highlight 7">
+      <img src="./For you/india/38b00ec35362f3a4ac2daae85c5da43b.webp" alt="Highlight 8">
+      <img src="./For you/india/3ef01fc83ae2f2d28241c8357c19b394.webp" alt="Highlight 9">
+      <img src="./For you/india/46dc87831458a77672275cc34ec24b50.webp" alt="Highlight 10">
+      <img src="./For you/india/5d290601ad457de7f559da0088d8695e.webp" alt="Highlight 11">
+      <img src="./For you/india/61bcf662b2e326a237f742c5d4ff2842.webp" alt="Highlight 12">
+      <img src="./For you/india/6260e6efc352bf0ecd5a422b25720b2f.webp" alt="Highlight 13">
+      <img src="./For you/india/63c9ff48f667baec7d4b9f01e83ebeaf.webp" alt="Highlight 14">
+      <img src="./For you/india/685d0fc2cc16e6a6e72d45f9a9052ec6.webp" alt="Highlight 15">
+      <img src="./For you/india/7b16a78e383d7450fdbcf058357d545d.webp" alt="Highlight 16">
+      <img src="./For you/india/9d303587d2f5f72f9f6567d4f9e179bd.webp" alt="Highlight 17">
+      <img src="./For you/india/b69e416d907b066126abd8bf1c1e7797.webp" alt="Highlight 18">
+      <img src="./For you/india/bef5d121508c9615ad7465ba7e269def.webp" alt="Highlight 19">
+      <img src="./For you/india/bf14c77169d6afc3ae5d96272ed0d286.webp" alt="Highlight 20">
+      <img src="./For you/india/c380a5ac7a485db1da373567c0b65561.webp" alt="Highlight 21">
+      <img src="./For you/india/c931eb2237784bc8aa44d028fc4c223a.webp" alt="Highlight 22">
+      <img src="./For you/india/d09b39aec14a20e7f2251622bd115aab.webp" alt="Highlight 23">
+      <img src="./For you/india/e30b8d573b22a4204b50c22ac09db2c2.webp" alt="Highlight 24">
+      <img src="./For you/india/e638bcd315227656ebb203e2bba32f8c.webp" alt="Highlight 25">
+      <img src="./For you/india/ee47934e6ff544a3ff04a03e5dce175e.webp" alt="Highlight 26">
+      <img src="./For you/india/fa0c5c91d14fd8df69c0d08f49cba4b3.webp" alt="Highlight 27">
+    </div>
+
+    <!-- Row 3: LIVE Sports Channels -->
+    <div class="text">
+      <h2 class="Offers">LIVE Sports Channels</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards round-cards">
+      <img src="./For you/Sports Channels/7d0d368840908947f0e3bb344c29c53f.webp" alt="Highlight 5">
+      <img src="./For you/Sports Channels/9c0fc822845789953d3be9c29bb6f0cd.webp" alt="Highlight 6">
+      <img src="./For you/Sports Channels/d775ae813cdc8095ee6b82b227a986cd.webp" alt="Highlight 8">
+      <img src="./For you/Sports Channels/0409f5b716b9adaa25dd57f980f367fe.webp" alt="Highlight 1">
+      <img src="./For you/Sports Channels/2aa8859883d95801441d4589a472ef0c.webp" alt="Highlight 2">
+      <img src="./For you/Sports Channels/51aafced6f7dbe6d3b0b316237051393.webp" alt="Highlight 3">
+      <img src="./For you/Sports Channels/6a84450aa04735d07a371d00ee62e44f.webp" alt="Highlight 4">
+      <img src="./For you/Sports Channels/c063708662593e2a313084f6c0a3f496.webp" alt="Highlight 7">
+      <img src="./For you/Sports Channels/d87a32186efc61d39043f90999fb717f.webp" alt="Highlight 9">
+      <img src="./For you/Sports Channels/d87b647bd83fabfaa9bed508e0f9793b.webp" alt="Highlight 10">
+      <img src="./For you/Sports Channels/ee28cef986ef5b6cf83ec15d062b35fe.webp" alt="Highlight 11">
+      <img src="./For you/Sports Channels/f2591bf11f934d7ca8fadd2aac98c2b9.webp" alt="Highlight 12">
+    </div>
+
+    <!-- Row 4: Gujarati Top Picks (Regional News & Channels) -->
+    <div class="text">
+      <h2 class="Offers">Gujarati Top Picks</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards round-cards">
+      <img src="./For you/Gujarati Top Picks/0748ca93adaa79c9359341ad5aa29d60.webp" alt="Highlight 1">
+      <img src="./For you/Gujarati Top Picks/09e123d8b0e69420dd7f49ed559f4c12.webp" alt="Highlight 2">
+      <img src="./For you/Gujarati Top Picks/2a461361f4f6b0b2235a6a1805b23ad6.webp" alt="Highlight 3">
+      <img src="./For you/Gujarati Top Picks/2c8a57ea39c162c52656bd73ae624aeb.webp" alt="Highlight 4">
+      <img src="./For you/Gujarati Top Picks/47ecce533db8a70cc5228135c3597011.webp" alt="Highlight 5">
+      <img src="./For you/Gujarati Top Picks/5363e3958457eacd70b5d215990ebe98.webp" alt="Highlight 6">
+      <img src="./For you/Gujarati Top Picks/56edf6cba469cf8a79a8a6da26b01ace.webp" alt="Highlight 7">
+      <img src="./For you/Gujarati Top Picks/60888a68c236cd97264490b05625efac.webp" alt="Highlight 8">
+      <img src="./For you/Gujarati Top Picks/661aa14f9fe3038e3a2e73cb76a5aa9f.webp" alt="Highlight 9">
+      <img src="./For you/Gujarati Top Picks/8a40b8d37fb6957c4818219909a5b126.webp" alt="Highlight 10">
+      <img src="./For you/Gujarati Top Picks/adc38d45c5f622e0e2ccad2d9ce9cd96.webp" alt="Highlight 11">
+      <img src="./For you/Gujarati Top Picks/c22cc829a01f75987631d21c398eba4e.webp" alt="Highlight 12">
+      <img src="./For you/Gujarati Top Picks/cec23f6aaf6ee0547df35e971784587e.webp" alt="Highlight 13">
+      <img src="./For you/Gujarati Top Picks/f344ea2f99c67074b52150e40cc30c24.webp" alt="Highlight 14">
+    </div>
+
+    <!-- Row 5: Marathi All-In-One -->
+    <div class="text">
+      <h2 class="Offers">Marathi All-In-One</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards round-cards">
+      <img src="./For you/All-In-One/06e801ef0646a5496e581f0dec5aea1d.webp" alt="Highlight 1">
+      <img src="./For you/All-In-One/29573422cfd3319690f725a947bd5aa3.webp" alt="Highlight 2">
+      <img src="./For you/All-In-One/4db56a487bc1edcd7438e667b6a46284.webp" alt="Highlight 3">
+      <img src="./For you/All-In-One/571884991267342639fbfd510ca3425f.png" alt="Highlight 4">
+      <img src="./For you/All-In-One/892917d1ba533a7e3f49969429659972.webp" alt="Highlight 5">
+      <img src="./For you/All-In-One/8b79487127bbb5d5342c2b8987732e2d.webp" alt="Highlight 6">
+      <img src="./For you/All-In-One/b538713a57e40f9fda1b9da38d67e679.webp" alt="Highlight 7">
+      <img src="./For you/All-In-One/cbfc396076a82705258fb3b019b1153b.webp" alt="Highlight 8">
+      <img src="./For you/All-In-One/d0f6225e053d170eb0686446a061f7a9.webp" alt="Highlight 9">
+      <img src="./For you/All-In-One/d30b867fdc73635349a36e3d0d40656a.webp" alt="Highlight 10">
+      <img src="./For you/All-In-One/d6194e658e491be9151728c341fe305b.webp" alt="Highlight 11">
+      <img src="./For you/All-In-One/dc2fc16b7d6f5d03d3af923c072ee5a8.webp" alt="Highlight 12">
+      <img src="./For you/All-In-One/f7bd957cae38ce282f6c0f30af20d08a.webp" alt="Highlight 13">
+      <img src="./For you/All-In-One/f8e6b696658b95eefa3041a7562c5bef.webp" alt="Highlight 14">
+      <img src="./For you/All-In-One/fd421db3c8758082a154f278e70d825b.webp" alt="">
+    </div>
+
+    <!-- Row 6: Diwali Dhamaka -->
+    <div class="text">
+      <h2 class="Offers">Diwali Dhamaka</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards landscape-cards">
+      <img src="./For you/Diwali/f7fa5d08a5fbfaba13f9655766594fef.jpg" alt="">  
+      <img src="./For you/Diwali/29f537cef265526e99cc33e7e4e5eb69_1762273998983_l_medium.jpg" alt="Pakistan vs UAE Match">
+      <img src="./For you/Diwali/58b51a5e78d19f1bfe9ffe5c257103bf.jpg" alt="Chukar Mere Mann Ko">
+      <img src="./For you/Diwali/67f7d70c808f24d01134fe461f39b265.png" alt="Indian Idol">
+      <img src="./For you/Diwali/81de66903c91ed69b1e1e681ec087129.jpg" alt="Laughter Chefs Season 3">
+      <img src="./For you/Diwali/a00e16ee0961ea09b118c1d9ae82377e.jpg" alt="Roro Aur Hero">
+      <img src="./For you/Diwali/a25ae234d3a1ecb63f35da2d3a81869c.jpg" alt="The Strangers Chapter 3">
+      <img src="./For you/Diwali/a5af71d9f159226ba35420002205a5d9.jpg" alt="Udne Ki Aasha">
+      <img src="./For you/Diwali/c9c483177a2beb7ef67a6a2637c23f0f.jpg" alt="">
+      <img src="./For you/Diwali/e0bce97d54835e50d75a6954bec2ad6e.jpg" alt="">
+      <img src="./For you/Diwali/014af1a55ba2538e947329d74001f3d6_1753806796570_l_medium.jpg" alt="India vs Nepal Match">
+    </div>
+
+    <!-- Row 7: Best of Entertainment -->
+    <div class="text">
+      <h2 class="Offers">Best of Entertainment</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards landscape-cards">
+      <img src="./For you/LaughterChefsS3_Crown_Carousel.jpg" alt="Laughter Chefs Season 3">
+      <img src="./For you/RoroAurHero_BhootMastiZabardast_EpicKids_Carousal.jpg" alt="Roro Aur Hero">
+      <img src="./For you/The-Strangers-Chapter-3_Premium-Banner_JioTv.jpg" alt="The Strangers Chapter 3">
+      <img src="./For you/Udne-ki-aasha.jpg" alt="Udne Ki Aasha">
+      <img src="./For you/Asia-Cup-U19-India-vs-Nepal-Sony-LIV-carousal.jpg" alt="India vs Nepal Match">
+      <img src="./For you/Asia-Cup-U19-Pakistan-vs-UAE-carousal.jpg" alt="Pakistan vs UAE Match">
+      <img src="./For you/ChukarMereMannKo_StarUtsav_Carousel.jpg" alt="Chukar Mere Mann Ko">
+      <img src="./For you/IndianIdol_SonyPal_Carousel.jpg" alt="Indian Idol">
+    </div>
+
+    <!-- Row 8: Premium Picks -->
+    <div class="text">
+      <h2 class="Offers">Premium Picks 👑</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards portrait-cards">
+      <img src="./For you/premium/241819154e2d681f7202e8e7363400c1.jpg" alt="Premium 1">
+      <img src="./For you/premium/35b376e37b2183b646efc8a82c858ff8.jpg" alt="Premium 2">
+      <img src="./For you/premium/4612b01e17b62047fea5764972982f8b.jpg" alt="Premium 3">
+      <img src="./For you/premium/5c811ded16228b89428042d1fc779eda.jpg" alt="Premium 4">
+      <img src="./For you/premium/645044a7ea1a9f621fc54a617d9cc1d3.jpg" alt="Premium 5">
+      <img src="./For you/premium/704c4442ac2e6c96fdc8e4f9079ec490.jpg" alt="Premium 6">
+      <img src="./For you/premium/9X16.jpg" alt="Premium 7">
+      <img src="./For you/premium/a723bd7b316c9c3f966ed450eed8ae50.jpg" alt="Premium 8">
+      <img src="./For you/premium/ab0a517fea7267ac92d454af41d531b5.jpg" alt="Premium 9">
+      <img src="./For you/premium/ace5a744a5dbb525af3d83399d5d010a.jpg" alt="Premium 10">
+      <img src="./For you/premium/ada75e700a4b34c17a8d426e8276da6f.jpg" alt="Premium 11">
+      <img src="./For you/premium/Habeebi-portrait-1440x1920.jpg" alt="Premium 12">
+      <img src="./For you/premium/SCRID-23517418_[Declassified Operation Sindoor_S1_V2_720x960]_LAN-en-US_PUR-tileburnedin.jpg" alt="Premium 13">
+      <img src="./For you/premium/SCRID-23896393_[Operation Maa_S1_2250x3000]_LAN-en-US_PUR-tileburnedin.jpg" alt="Premium 14">
+    </div>
+
+    <!-- Row 9: Trending Movies -->
+    <div class="text">
+      <h2 class="Offers">Trending Movies</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards landscape-cards">
+      <img src="./For you/movies/38536cfd31481d5afa03ac6e1091b7ac.jpg" alt="India vs Nepal Match">
+      <img src="./For you/movies/4a40a248a758a38eb58627c99ef2f763.jpg" alt="Pakistan vs UAE Match">
+      <img src="./For you/movies/52862ef058ba550aaa272f671bced7ec.jpg" alt="Chukar Mere Mann Ko">
+      <img src="./For you/movies/8382ae87cda63e20204297be15f09e2b.jpg" alt="Indian Idol">
+      <img src="./For you/movies/b4556d631cbfc2475cd2dd71309782de.jpg" alt="Laughter Chefs Season 3">
+      <img src="./For you/movies/bd45adca5b3b81a16d7e8a2aa8dedafa.jpg" alt="Roro Aur Hero">
+      <img src="./For you/movies/d9cd463f3bdfee23ba7b6717bf461aba.jpg" alt="The Strangers Chapter 3">
+      <img src="./For you/movies/f1903f9c9eaa88ce2b63de4c828d3857.jpg" alt="Udne Ki Aasha">
+    </div>
+
+    <!-- Row 10: Heroes & Giggles -->
+    <div class="text">
+      <h2 class="Offers">Heroes & Giggles</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards landscape-cards">
+      <img src="./For you/horor/0f0a997001efeffe680540f2a5edd1e1.jpg" alt="India vs Nepal Match">
+      <img src="./For you/horor/2c6ba917826344de56c403b304b4638b.jpg" alt="Pakistan vs UAE Match">
+      <img src="./For you/horor/2f082d79212390796c6153935ba3dc08.jpg" alt="Chukar Mere Mann Ko">
+      <img src="./For you/horor/36c86387bf7573c38db89b6bfafb11ac.jpg" alt="Indian Idol">
+      <img src="./For you/horor/41cab5065185e1896c3cb6168c22b8cb.jpg" alt="Laughter Chefs Season 3">
+      <img src="./For you/horor/7ad2d1fe3f3cfa501cd0d8c04af5ec6c.jpg" alt="Roro Aur Hero">
+      <img src="./For you/horor/7d36d724baa389e1ce2e70d3c76eba60.jpg" alt="The Strangers Chapter 3">
+      <img src="./For you/horor/ae741054a68fb6b4cd8d7f81ab6ae56a.jpg" alt="Udne Ki Aasha">
+      <img src="./For you/horor/b66df009782f1bf51ce27df13c2fbc26.jpg" alt="">
+    </div>
+
+    <!-- Row 11: Musical Beats -->
+    <div class="text">
+      <h2 class="Offers">Musical Beats</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards landscape-cards">
+      <img src="./For you/musical/0899b828f471f980b3bfa189b1e19434.jpg" alt="India vs Nepal Match">
+      <img src="./For you/musical/0b3877322498e629dd05d38350f12aad.jpg" alt="Pakistan vs UAE Match">
+      <img src="./For you/musical/0c5807bcc5d7063242f5d62e2c8ab378.jpg" alt="Chukar Mere Mann Ko">
+      <img src="./For you/musical/14e1dce2d09cb20a88497cc9dda6c02e.jpg" alt="Indian Idol">
+      <img src="./For you/musical/1512b9011a724855de970ef182cc1995.jpg" alt="Laughter Chefs Season 3">
+      <img src="./For you/musical/27044f055f1449859e45973eb2773a36.jpg" alt="Roro Aur Hero">
+      <img src="./For you/musical/4df3c5036e2cc46ed39fd3d0cda37375.jpg" alt="The Strangers Chapter 3">
+      <img src="./For you/musical/5ba8e147da60a2c3c1de20ff70d8b3f6.jpg" alt="Udne Ki Aasha">
+      <img src="./For you/musical/5c8b0d9b6e8ab1e5abfb84d05c92d130.jpg" alt="">
+      <img src="./For you/musical/5fe77e42f0ae66529efb9a299813242a.jpg" alt="">
+      <img src="./For you/musical/94129709725e670fb00df5ff110455c9.jpg" alt="">
+      <img src="./For you/musical/afa1da4524184106e54d4b915f3c45ad.jpg" alt="">
+      <img src="./For you/musical/b1c09a0ae4255811fa3fbd954558c4fa.jpg" alt="">
+      <img src="./For you/musical/b8f58a8036404eeb79ca367851a6154f.jpg" alt="">
+      <img src="./For you/musical/bea5bab5cac2745a26cc8db8f83718b6.jpg" alt="">
+      <img src="./For you/musical/c054abd77be1ffaa7ebbd02fece36c23.jpg" alt="">
+      <img src="./For you/musical/d03824e16f67a91a47e8b70350fbab1f.jpg" alt="">
+      <img src="./For you/musical/d2d0fa8027882dbb964f6164d82061cf.jpg" alt="">
+    </div>
+
+    <!-- Row 12: Premium Kids Entertainment -->
+    <div class="text">
+      <h2 class="Offers">Premium Kids Entertainment 👑</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards landscape-cards">
+      <img src="./For you/Kids/1d5ed2209cba44bad27d2c8c6c7b7b03.jpg" alt="India vs Nepal Match">
+      <img src="./For you/Kids/2862ca414d2dd52fb9bea0668d8ea5f4.jpg" alt="Pakistan vs UAE Match">
+      <img src="./For you/Kids/f3ba0af3d90f8a13f4335d5eb8570654.jpg" alt="Chukar Mere Mann Ko">
+    </div>
+
+    <!-- Row 13: Regional Premium -->
+    <div class="text">
+      <h2 class="Offers">Regional Premium 👑</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards landscape-cards">
+      <img src="./For you/Regional/b930ff95e506469f9c3ae4dac85b5184.jpg" alt="The Strangers Chapter 3">
+      <img src="./For you/Regional/12a1850a4c079de0318ca8717d3550ae.jpg" alt="India vs Nepal Match">
+      <img src="./For you/Regional/445e46fa18ca002bff3de50203fdf3af.jpg" alt="Pakistan vs UAE Match">
+      <img src="./For you/Regional/5b772ea28700e66c06033abe0746801e.jpg" alt="Chukar Mere Mann Ko">
+      <img src="./For you/Regional/8611076f3a74948df521826e18b96cdc.jpg" alt="Indian Idol">
+      <img src="./For you/Regional/93cdc506074dec0a71141e6b9ebef49b.jpg" alt="Laughter Chefs Season 3">
+      <img src="./For you/Regional/996c066cdade17eea06f506ca474fb0c.jpg" alt="Roro Aur Hero">
+      <img src="./For you/Regional/d017415e3b4b0e3c663104dbf7ce4a5d.jpg" alt="Udne Ki Aasha">
+    </div>
+
+    <!-- Row 14: Top Kannada Channels -->
+    <div class="text">
+      <h2 class="Offers">Top Kannada Channels</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards landscape-cards">
+      <img src="./For you/Kannada/001f0e462584aaf0a7e4fed4118221a4d0f.jpg" alt="India vs Nepal Match">
+      <img src="./For you/Kannada/1f9d1110ceccf6c1975f2a22fb574a1e.jpg" alt="Pakistan vs UAE Match">
+      <img src="./For you/Kannada/2a6d29dcdef48290fbccec6fd9d0ce1c.jpg" alt="Chukar Mere Mann Ko">
+      <img src="./For you/Kannada/4f96176f8ff5d1d2688fe85a7bda2b18.jpg" alt="Indian Idol">
+      <img src="./For you/Kannada/8fb1636a35c5aca7cfd807f20dd4bb04.jpg" alt="Laughter Chefs Season 3">
+      <img src="./For you/Kannada/a3effae1df27cde9b4824896d816b619.jpg" alt="Roro Aur Hero">
+      <img src="./For you/Kannada/a80bdf8cd72a1e7d9437c37b6f197e1d.jpg" alt="The Strangers Chapter 3">
+      <img src="./For you/Kannada/b5722ebfaa4ae930624fa6b6a48ea26e.jpg" alt="Udne Ki Aasha">
+      <img src="./For you/Kannada/b66df009782f1bf51ce27df13c2fbc26.jpg" alt="">
+      <img src="./For you/Kannada/c15381f14ef0605f4fe55cf3d0ae77ba.jpg" alt="">
+      <img src="./For you/Kannada/ce4adb4e08a2af66795da37897b9cb98.jpg" alt="">
+    </div>
+
+    <!-- Row 15: Best of Telugu TV -->
+    <div class="text">
+      <h2 class="Offers">Best of Telugu TV</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards landscape-cards">
+      <img src="./For you/Best of Telugu TV/2e176158afa1a22d4c8d4f934b0a7cb9.jpg" alt="India vs Nepal Match">
+      <img src="./For you/Best of Telugu TV/6b4b11d6f1be8c85a0da03decb3f0e2b.jpg" alt="Pakistan vs UAE Match">
+      <img src="./For you/Best of Telugu TV/7966fe1d4cf55b7453179e0bd342e339.jpg" alt="Chukar Mere Mann Ko">
+      <img src="./For you/Best of Telugu TV/94129709725e670fb00df5ff110455c9.jpg" alt="Indian Idol">
+      <img src="./For you/Best of Telugu TV/996c066cdade17eea06f506ca474fb0c.jpg" alt="Laughter Chefs Season 3">
+      <img src="./For you/Best of Telugu TV/9bcd84bc7929b23a57a5a0e9f54e1d8c.jpg" alt="Roro Aur Hero">
+      <img src="./For you/Best of Telugu TV/a510b955866769b4274a15f68db34e11.jpg" alt="The Strangers Chapter 3">
+      <img src="./For you/Best of Telugu TV/b5722ebfaa4ae930624fa6b6a48ea26e.jpg" alt="Udne Ki Aasha">
+      <img src="./For you/Best of Telugu TV/beed4e4cc78f61f86711da339807f54f.jpg" alt="">
+      <img src="./For you/Best of Telugu TV/d017415e3b4b0e3c663104dbf7ce4a5d.jpg" alt="">
+      <img src="./For you/Best of Telugu TV/edfccd487671f798da3b8374a56d6d48.jpg" alt="">
+      <img src="./For you/Best of Telugu TV/f3ba0af3d90f8a13f4335d5eb8570654.jpg" alt="">
+    </div>
+
+    <!-- Row 16: Malayalam Picks -->
+    <div class="text">
+      <h2 class="Offers">Malayalam Picks</h2>
+      <a class="OffersAll" href="#">See All</a>
+    </div>
+    <div class="cards landscape-cards">
+      <img src="./For you/Malayalam Picks/00ae4e05e0f666a17f35337682f0989442.jpg" alt="India vs Nepal Match">
+      <img src="./For you/Malayalam Picks/0a5d5b8cd579fbd617b080b00d69c719.jpg" alt="Pakistan vs UAE Match">
+      <img src="./For you/Malayalam Picks/617db155cf4ca90db5865c5aedfef4c1.jpg" alt="Chukar Mere Mann Ko">
+      <img src="./For you/Malayalam Picks/668fba60ea8ceef581862da9e128034d.jpg" alt="Indian Idol">
+      <img src="./For you/Malayalam Picks/6bda21393d045fde58314cf9bd786c17.jpg" alt="Laughter Chefs Season 3">
+      <img src="./For you/Malayalam Picks/6f4a16f9d1bc93ea23cbba297f948260.jpg" alt="Roro Aur Hero">
+      <img src="./For you/Malayalam Picks/80087fcd4203665b7316c6b52c11ba61.png" alt="The Strangers Chapter 3">
+      <img src="./For you/Malayalam Picks/9e20579e2fda523ef92f78c52ff83e2a.jpg" alt="Udne Ki Aasha">
+      <img src="./For you/Malayalam Picks/a3233541417b7487eb2b218b272d161a.png" alt="">
+      <img src="./For you/Malayalam Picks/ba8d0aebdc71d404100e234248007f6a.png" alt="">
+      <img src="./For you/Malayalam Picks/c0b9b51578023582a31df0117c42de43.jpg" alt="">
+      <img src="./For you/Malayalam Picks/c850045f6cd0c3757c310eec6f485a12.jpg" alt="">
+    </div>
+
+  </div>
+</section>
+
+
+</main>
+
+<footer>
+  <div class="footer-container">
+    
+    <!-- Left Section: Link Columns -->
+    <div class="footer-links-container">
+      <div class="footer-grid">
+        <!-- Column 1: Explore & Support -->
+        <div class="footer-col">
+          <div class="footer-group">
+            <h3 class="col-title">Explore</h3>
+            <ul class="link-list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Premium</a></li>
+              <li><a href="#">Movies</a></li>
+              <li><a href="#">Sports</a></li>
+              <li><a href="#">Specials</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Shows</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Column 2: Top Entertainment Channels -->
+        <div class="footer-col">
+          <h3 class="col-title">Top Entertainment Channels</h3>
+          <ul class="link-list">
+            <li><a href="#">Colors HD</a></li>
+            <li><a href="#">SET HD</a></li>
+            <li><a href="#">Colors Cineplex HD</a></li>
+            <li><a href="#">Dangal</a></li>
+            <li><a href="#">Colors Kannada HD</a></li>
+            <li><a href="#">Colors Marathi HD</a></li>
+            <li><a href="#">Sony SAB HD</a></li>
+            <li><a href="#">Sun TV HD</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Top News Channels -->
+        <div class="footer-col">
+          <h3 class="col-title">Top News Channels</h3>
+          <ul class="link-list">
+            <li><a href="#">Aaj Tak</a></li>
+            <li><a href="#">India TV</a></li>
+            <li><a href="#">ABP News India</a></li>
+            <li><a href="#">Republic Bharat</a></li>
+            <li><a href="#">News 18 India</a></li>
+            <li><a href="#">TV9 Bharatvarsh</a></li>
+            <li><a href="#">TV9 Telugu News</a></li>
+            <li><a href="#">TV9 Kannada</a></li>
+            <li><a href="#">Zee News</a></li>
+            <li><a href="#">Zee Business</a></li>
+            <li><a href="#">News 24</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Top Sports Channels -->
+        <div class="footer-col">
+          <h3 class="col-title">Top Sports Channels</h3>
+          <ul class="link-list">
+            <li><a href="#">Sports18 1 HD</a></li>
+            <li><a href="#">Sports18 2</a></li>
+            <li><a href="#">Sony Ten 1 HD</a></li>
+            <li><a href="#">Sports18 Khel</a></li>
+            <li><a href="#">Sony Ten 1</a></li>
+            <li><a href="#">Sony Ten 5 HD</a></li>
+            <li><a href="#">Jio Cricket English HD</a></li>
+            <li><a href="#">Eurosport HD</a></li>
+            <li><a href="#">Brave TV</a></li>
+            <li><a href="#">Sony Ten 3 HD Hindi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+            <h3 class="col-title">Support</h3>
+            <ul class="link-list">
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">JioTV Beta Program</a></li>
+              <li><a href="#">Coupon Redemption</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+
+    <!-- Right Section: Social & App Download -->
+    <div class="part2">
+      <div class="contact-section">
+        <h3 class="section-title">Connect with us</h3>
+        <div class="social-links">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+
+        <h3 class="section-title">Download Our App</h3>
+        <div class="app-links">
+          <a href="#" class="app-badge">
+            <img src="./footer icon/Google_Play_Store_badge_EN.svg.webp" alt="Google Play">
+          </a>
+          <a href="#" class="app-badge">
+            <img src="./footer icon/app_store.webp" alt="App Store">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- Bootstrap JavaScript Bundle -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
