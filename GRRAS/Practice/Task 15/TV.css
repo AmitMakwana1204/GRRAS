@@ -527,6 +527,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
 .Right-filters {
     display: flex;
@@ -583,6 +584,48 @@ header {
     border-bottom: 2px solid black;
 }
 
+.top-bar {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-bar .Days {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+}
+
+.top-bar span {
+    width: 15%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    border: 1px solid gainsboro;
+    color: #700017;
+}
+
+.top-bar .Day1 {
+    border: 1px solid gainsboro;
+    color: white;
+    background-color: #b0002c;
+}
+
+.top-bar span:hover {
+    border: 1px solid #700017;
+    cursor: pointer;
+}
+
+.top-bar .Day1:hover {
+    background-color: #700017;
+    cursor: pointer;
 }
 
 }
