@@ -46,6 +46,10 @@ jobs:
           cp Project/Portfolio/Portfolio.html \
              _site/Project/Portfolio/index.html
 
+          # JioTV Cloan
+          cp project/JioTV/JioTV.html \
+             _site/project/JioTV/index.html
+
           # Disable Jekyll
           touch _site/.nojekyll
 

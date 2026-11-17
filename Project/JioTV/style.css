@@ -1,0 +1,1368 @@
+
+/* ==============================
+   GLOBAL CSS
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+/* ==============================
+   MAIN NAVBAR
+============================== */
+
+.jio-navbar {
+    width: 100%;
+    background-color: #b0002c;
+}
+
+
+/* ==============================
+   TOP NAVBAR
+============================== */
+
+.top-navbar {
+    display: flex;
+    align-items: center;
+    min-height: 73px;
+    padding: 0 14px;
+    background-color: #b0002c;
+}
+
+
+/* ==============================
+   LOGO
+============================== */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-right: 42px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.jio-logo {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+
+/* ==============================
+   DESKTOP NAVIGATION
+============================== */
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    margin: 0 auto 0 0;
+    padding: 0;
+}
+
+.desktop-nav li {
+    flex-shrink: 0;
+}
+
+.desktop-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 10px;
+}
+
+.desktop-nav a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.desktop-nav a.active {
+    color: white;
+    text-decoration: underline;
+}
+
+/* ==============================
+   SEARCH BOX
+============================== */
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: #800020;
+    border-radius: 30px;
+    height: 40px;
+    width: 200px;
+    padding: 0 15px;
+    gap: 12px;
+}
+
+.search-box input {
+    width: 100%;
+    min-width: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+}
+
+.search-box input::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.search-box i {
+    color: white;
+    font-size: 17px;
+    flex-shrink: 0;
+}
+
+.search-box .mic {
+    font-size: 18px;
+}
+
+
+/* ==============================
+   PROFILE ICON
+============================== */
+
+.profile-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.profile-icon i {
+    color: #111111;
+    font-size: 20px;
+}
+
+
+/* ==============================
+   HAMBURGER BUTTON
+============================== */
+
+.mobile-menu-toggle {
+    display: none;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.mobile-menu-toggle:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* ==============================
+   MOBILE NAVIGATION
+============================== */
+
+.mobile-nav-scroll {
+    display: none;
+}
+
+.mobile-nav-scroll a.active {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   TABLET RESPONSIVE
+============================== */
+
+@media (max-width: 991.98px) {
+
+    /* Top Navbar */
+
+    .top-navbar {
+        min-height: 63px;
+        padding: 0 10px;
+    }
+
+    /* Hamburger */
+
+    .mobile-menu-toggle {
+        display: block;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    /* Logo */
+
+    .navbar-brand {
+        margin-right: auto;
+    }
+
+    .logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .jio-logo {
+        font-size: 16px;
+    }
+
+    /* Desktop Menu Hide */
+
+    .desktop-nav {
+        display: none;
+    }
+
+    /* Search and Profile */
+
+    .right-menu {
+        gap: 10px;
+    }
+
+    .search-box {
+        width: 200px;
+        height: 40px;
+    }
+
+    .profile-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    /* Mobile Navigation Show */
+
+    .mobile-nav-scroll {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scrollbar-width: none;
+        background-color: #b0002c;
+        padding: 0 14px;
+    }
+
+    .mobile-nav-scroll::-webkit-scrollbar {
+        display: none;
+    }
+
+    .mobile-nav-scroll ul {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        width: max-content;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-nav-scroll li {
+        flex-shrink: 0;
+    }
+
+    .mobile-nav-scroll a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 8px;
+    }
+
+    .mobile-nav-scroll a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE RESPONSIVE
+============================== */
+
+@media (max-width: 575.98px) {
+
+    .top-navbar {
+        min-height: 60px;
+        padding: 0 8px;
+    }
+
+    /* Hamburger */
+
+    .mobile-menu-toggle {
+        font-size: 19px;
+        margin-right: 8px;
+    }
+
+    /* Logo */
+
+    .logo {
+        width: 30px;
+        height: 30px;
+    }
+
+    .jio-logo {
+        font-size: 15px;
+    }
+
+    /* Right Menu */
+
+    .right-menu {
+        gap: 8px;
+    }
+
+    .search-box {
+        width: 175px;
+        height: 38px;
+        padding: 0 12px;
+        gap: 9px;
+    }
+
+    .search-box input {
+        font-size: 13px;
+    }
+
+    .search-box i {
+        font-size: 16px;
+    }
+
+    .profile-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .profile-icon i {
+        font-size: 17px;
+    }
+
+    /* Horizontal Menu */
+
+    .mobile-nav-scroll {
+        padding: 0 14px;
+    }
+
+    .mobile-nav-scroll ul {
+        gap: 10px;
+    }
+
+    .mobile-nav-scroll a {
+        font-size: 14px;
+        padding: 9px 8px;
+    }
+
+}
+
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media (max-width: 380px) {
+
+    .mobile-menu-toggle {
+        margin-right: 5px;
+        font-size: 18px;
+    }
+
+    .jio-logo {
+        font-size: 14px;
+    }
+
+    .search-box {
+        width: 135px;
+        padding: 0 9px;
+        gap: 7px;
+    }
+
+    .search-box input {
+        font-size: 11px;
+    }
+
+}
+
+
+/* ==============================
+   MOBILE SIDE DRAWER
+============================== */
+
+.mobile-drawer {
+    width: 80% !important;
+    max-width: 410px;
+    background-color: white;
+    border: none !important;
+}
+
+
+/* Drawer Header */
+
+.drawer-header {
+    height: 60px;
+    background-color: #b0002c;
+    padding: 0 24px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+/* Close Button */
+
+.drawer-close {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.drawer-close:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* Drawer Body */
+
+.drawer-body {
+    padding: 0 24px;
+}
+
+
+/* Drawer Menu */
+
+.drawer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.drawer-menu li {
+    border-bottom: 1px solid #dddddd;
+}
+
+.drawer-menu li:last-child {
+    border-bottom: none;
+}
+
+.drawer-menu li a {
+    display: block;
+    padding: 22px 0;
+    text-decoration: none;
+    color: #222222;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.drawer-menu li a:hover {
+    color: #b0002c;
+    text-decoration: underline;
+}
+
+
+/* Drawer Backdrop */
+
+.offcanvas-backdrop.show {
+    opacity: 0.7;
+}
+
+
+/* ==============================
+   DESKTOP DRAWER HIDE
+============================== */
+
+@media (min-width: 992px) {
+
+    .mobile-drawer {
+        display: none !important;
+    }
+
+    .mobile-menu-toggle {
+        display: none !important;
+    }
+
+}
+}
+
+main {
+
+.specials {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.specials .specials-card {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.specials .specials-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* ============================= */
+/* HERO CAROUSEL */
+/* ============================= */
+
+.carousel-section {
+    width: 100%;
+    padding-top: 39px;
+    padding-bottom: 75px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.carousel-section .carousel {
+    width: 100%;
+}
+
+.carousel-section .carousel-inner {
+    overflow: visible;
+}
+
+.carouselimg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+/* Side Images */
+
+.side-card {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.side-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Center Image */
+
+.main-card {
+    width: 40%;
+    height: 350px;
+    flex-shrink: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.main-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Carousel Controls */
+
+.carousel-section .carousel-control-prev,
+.carousel-section .carousel-control-next {
+    width: 36px;
+    height: 36px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.carousel-section .carousel-control-prev {
+    left: 18px;
+}
+
+.carousel-section .carousel-control-next {
+    right: 18px;
+}
+
+.carousel-section .carousel-control-prev-icon,
+.carousel-section .carousel-control-next-icon {
+    width: 18px;
+    height: 18px;
+    filter: invert(1);
+}
+
+/* Carousel Speed */
+.carousel-section .carousel-item {
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Carousel Indicators */
+
+.carousel-section .carousel-indicators {
+    position: absolute;
+    bottom: -55px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.carousel-section .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+    margin: 0 3px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #ff5b68;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.carousel-section .carousel-indicators button.active {
+    width: 22px;
+    height: 7px;
+    border-radius: 10px;
+    background-color: #e50019;
+}
+
+
+/* ============================= */
+/* BOTTOM APP BANNER */
+/* ============================= */
+
+.app-banner {
+    width: 100%;
+    min-height: 58px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #f8e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 8px 20px;
+}
+
+.app-banner h3 {
+    font-size: 19px;
+    font-weight: bold;
+    color: #a90023;
+    margin: 0;
+}
+
+.app-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.store-btn {
+    height: 36px;
+    padding: 3px 10px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.store-btn:hover {
+    color: white;
+}
+
+.store-btn i {
+    font-size: 24px;
+}
+
+.store-btn span {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+}
+
+.store-btn small {
+    display: block;
+    font-size: 8px;
+    font-weight: normal;
+}
+
+.banner-close {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: #b00025;
+    color: white;
+    margin-left: 15px;
+}
+
+
+/* ============================= */
+/* TABLET RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 991.98px) {
+
+    /* Hero Carousel */
+
+    .carouselimg {
+        gap: 18px;
+    }
+
+    .side-card {
+        width: 23.5%;
+        height: 350px;
+        flex-shrink: 0;
+    }
+
+    .main-card {
+        width: 50%;
+        height: 350px;
+    }
+
+    /* Diwali Dhamaka */
+
+    .content-section {
+        padding: 0 3% 70px;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .content-card {
+        min-width: 230px;
+        height: 140px;
+    }
+
+    /* Bottom Banner */
+
+    .app-banner {
+        gap: 15px;
+    }
+
+}
+
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 767.98px) {
+
+    /* Hero Carousel */
+
+    .carousel-section {
+        padding-top: 25px;
+        padding-bottom: 55px;
+    }
+
+    .carouselimg {
+        gap: 12px;
+    }
+
+    .side-card {
+        width: 23.5%;
+        height: 230px;
+        border-radius: 15px;
+    }
+
+    .main-card {
+        width: 50%;
+        height: 230px;
+        border-radius: 15px;
+    }
+
+    /* Carousel Controls */
+
+    .carousel-section .carousel-control-prev,
+    .carousel-section .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carousel-section .carousel-control-prev {
+        left: 8px;
+    }
+
+    .carousel-section .carousel-control-next {
+        right: 8px;
+    }
+
+    .carousel-section .carousel-control-prev-icon,
+    .carousel-section .carousel-control-next-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    /* Carousel Indicators */
+
+    .carousel-section .carousel-indicators {
+        bottom: -38px;
+    }
+
+    /* Diwali Dhamaka */
+
+    .content-section {
+        padding: 0 3% 60px;
+    }
+
+    .section-heading {
+        margin-bottom: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 22px;
+    }
+
+    .section-heading a {
+        font-size: 13px;
+    }
+
+    .content-list {
+        gap: 10px;
+    }
+
+    .content-card {
+        min-width: 200px;
+        height: 125px;
+    }
+
+    /* Bottom Banner */
+
+    .app-banner {
+        min-height: 55px;
+        gap: 10px;
+        padding: 8px 10px;
+    }
+
+    .app-banner h3 {
+        font-size: 15px;
+    }
+
+    .app-links {
+        gap: 8px;
+    }
+
+    .store-btn {
+        height: 32px;
+        padding: 3px 7px;
+        gap: 5px;
+    }
+
+    .store-btn i {
+        font-size: 19px;
+    }
+
+    .store-btn span {
+        font-size: 10px;
+    }
+
+    .store-btn small {
+        font-size: 7px;
+    }
+
+    .banner-close {
+        width: 25px;
+        height: 25px;
+        margin-left: 5px;
+    }
+
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 575.98px) {
+
+    /* Hero Carousel */
+
+    .carousel-section {
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+
+    .carouselimg {
+        gap: 10px;
+    }
+
+    .side-card {
+        height: 170px;
+        border-radius: 10px;
+    }
+
+    .main-card {
+        height: 170px;
+        border-radius: 10px;
+    }
+
+    /* Carousel Controls */
+
+    .carousel-section .carousel-control-prev,
+    .carousel-section .carousel-control-next {
+        width: 25px;
+        height: 25px;
+    }
+
+    .carousel-section .carousel-control-prev {
+        left: 5px;
+    }
+
+    .carousel-section .carousel-control-next {
+        right: 5px;
+    }
+
+    /* Indicators */
+
+    .carousel-section .carousel-indicators {
+        bottom: -32px;
+    }
+
+    .carousel-section .carousel-indicators button {
+        width: 6px;
+        height: 6px;
+    }
+
+    .carousel-section .carousel-indicators button.active {
+        width: 18px;
+        height: 6px;
+    }
+
+    /* Diwali Dhamaka */
+
+    .content-section {
+        padding: 0 4% 50px;
+    }
+
+    .section-heading h2 {
+        font-size: 19px;
+    }
+
+    .section-heading a {
+        font-size: 12px;
+    }
+
+    .content-card {
+        min-width: 165px;
+        height: 105px;
+        border-radius: 10px;
+    }
+
+    /* Bottom Banner */
+
+    .app-banner {
+        min-height: 50px;
+        gap: 6px;
+        padding: 6px;
+    }
+
+    .app-banner h3 {
+        font-size: 12px;
+    }
+
+    .app-links {
+        gap: 5px;
+    }
+
+    .store-btn {
+        height: 29px;
+        padding: 3px 5px;
+        gap: 4px;
+    }
+
+    .store-btn i {
+        font-size: 16px;
+    }
+
+    .store-btn span {
+        font-size: 8px;
+        line-height: 10px;
+    }
+
+    .store-btn small {
+        font-size: 6px;
+    }
+
+    .banner-close {
+        width: 22px;
+        height: 22px;
+        margin-left: 2px;
+        font-size: 11px;
+    }
+
+}
+
+
+/* ============================= */
+/* EXTRA SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 380px) {
+
+    /* Hero Carousel */
+
+    .side-card {
+        height: 145px;
+    }
+
+    .main-card {
+        height: 145px;
+    }
+
+    .carouselimg {
+        gap: 8px;
+    }
+
+    /* Diwali Dhamaka */
+
+    .section-heading h2 {
+        font-size: 17px;
+    }
+
+    .content-card {
+        min-width: 145px;
+        height: 95px;
+    }
+
+    /* Bottom Banner */
+
+    .app-banner {
+        gap: 4px;
+    }
+
+    .app-banner h3 {
+        font-size: 10px;
+    }
+
+    .store-btn {
+        padding: 3px 4px;
+    }
+
+    .store-btn i {
+        font-size: 14px;
+    }
+
+    .banner-close {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+
+}
+
+.diwali-cards {
+  margin: 10px 5%;
+
+.text {
+  margin-top: 24px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text .Offers {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text .OffersAll {
+  padding: 2px 15px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #700017;
+  background-color: transparent;
+  transition: background-color 0.2s ease;
+}
+
+.text .OffersAll:hover {
+  background-color: #fcdee0;
+  cursor: pointer;
+}
+
+/* Horizontal scroll strip */
+.cards {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 8px;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide default scrollbars for an app-like feel */
+.cards::-webkit-scrollbar {
+  height: 6px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/* Landscape format (Diwali Dhamaka & Best of Entertainment) */
+.landscape-cards img {
+  flex: 0 0 400px;
+  width: 400px;
+  height: 250px;
+  background-color: #111111;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* Portrait/Poster format (Highlights & Premium Picks) */
+.portrait-cards img {
+  flex: 0 0 200px;
+  width: 200px;
+  height: 300px;
+  background-color: #111111;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.round-cards img{
+  flex: 0 0 300px;          /* Scaled down to fit row nicely */
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;     /* 50% ensures a true circle */
+  background-color: #e5e5e5;
+  object-fit: contain;      /* "contain" prevents logos from getting cropped */
+  padding: 14px; 
+  cursor: pointer;
+}
+
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .diwali-cards {
+    margin: 10px 3%;
+  }
+
+  .text .Offers {
+    font-size: 22px;
+  }
+
+  .landscape-cards img {
+    flex: 0 0 280px;
+    width: 280px;
+    height: 180px;
+  }
+
+  .portrait-cards img {
+    flex: 0 0 140px;
+    width: 140px;
+    height: 210px;
+  }
+
+  .round-cards img {
+    flex: 0 0 180px;
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+  }
+}
+
+}
+
+footer {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 50px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+/* Main Container: Flex layout to keep Links and Right Section side-by-side */
+.footer-container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Left side: Grid of links */
+.footer-links-container {
+  flex: 1.4;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #111111;
+  margin: 0 0 16px 0;
+  line-height: 1.3;
+}
+
+.link-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-list li {
+  padding: 7px 2px;
+}
+
+.link-list li a {
+  text-decoration: none;
+  color: #555555;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link-list li:hover {
+  background-color: #dfdddd;
+}
+
+/* Right side: Connect & Apps */
+.part2 {
+  flex: 0.6;
+  min-width: 270px;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 900;
+  color: #111111;
+}
+
+/* Round Social Icons */
+.social-links {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #9c0022;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.social-icon:hover {
+    background-color: #700017;
+}
+
+/* App Badges */
+.app-links {
+  max-width: 300px;
+  height: 50px;
+  display: grid;
+  flex-shrink: 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.app-badge img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+
+/* Responsive Breakpoints */
+@media (max-width: 1080px) {
+  .footer-container {
+    flex-direction: column;
+  }
+  .part2 {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  .app-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+}
