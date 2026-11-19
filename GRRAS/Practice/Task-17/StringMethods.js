@@ -1,0 +1,26 @@
+let str = "  hellow world  ";
+
+console.log(str);
+console.log(str.length);
+console.log(str.toUpperCase());
+console.log(str.toLowerCase());
+console.log(str.trim());
+console.log(str.trimStart());
+console.log(str.trimEnd());
+console.log(str.charAt(3));
+console.log(str.charCodeAt(3));
+console.log(str.at(-3));
+console.log(str.indexOf("o"));
+console.log(str.lastIndexOf("o"));
+console.log(str.includes("world"));
+console.log(str.startsWith("  he"));
+console.log(str.endsWith("ld  "));
+console.log(str.slice(2, 8));
+console.log(str.substring(2, 8));
+console.log(str.replace("world", "js"));
+console.log(str.replaceAll("l", "L"));
+console.log(str.split(" "));
+console.log(str.concat(" 2026"));
+console.log(str.repeat(2));
+console.log(str.padStart(20, "*"));
+console.log(str.padEnd(20, "*"));
