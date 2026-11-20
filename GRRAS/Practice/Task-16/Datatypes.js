@@ -1,7 +1,7 @@
 // 1. String
-let str = "hellow world";
-console.log(str);
-console.log(typeof str);
+let hi = "hellow world";
+console.log(hi);
+console.log(typeof hi);
 
 // 2. Number
 let num = 99;

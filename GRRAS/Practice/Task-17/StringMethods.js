@@ -1,4 +1,4 @@
-let str = "  hellow world  ";
+let str = " hellow world ";
 
 console.log(str);
 console.log(str.length);
