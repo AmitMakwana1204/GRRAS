@@ -20,6 +20,7 @@ console.log(str.substring(2, 8));
 console.log(str.replace("world", "js"));
 console.log(str.replaceAll("l", "L"));
 console.log(str.split(" "));
+console.log(str.split(""));
 console.log(str.concat(" 2026"));
 console.log(str.repeat(2));
 console.log(str.padStart(20, "*"));

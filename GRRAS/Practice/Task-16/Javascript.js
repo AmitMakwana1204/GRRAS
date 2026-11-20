@@ -1,6 +1,6 @@
 let xyz = "hellow world"
 console.log(xyz);
-console.log(xyz.split(""));
+console.log(xyz.split(" "));
 console.log(xyz.trimStart());
 console.log(xyz.trim());
 console.log(xyz.trimEnd());
