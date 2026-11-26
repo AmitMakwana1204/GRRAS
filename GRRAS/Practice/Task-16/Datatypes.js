@@ -1,49 +1,20 @@
-// 1. String
-let hi = "hellow world";
-console.log(hi);
-console.log(typeof hi);
+let name = "Amit";                  // String
+let age = 21;                       // Number
+let isActive = true;                // Boolean
+let city;                           // Undefined
+let data = null;                    // Null
+let bigNum = 900719925474099199n;   // BigInt
+let id = Symbol("id");              // Symbol
 
-// 2. Number
-let num = 99;
-console.log(num);
-console.log(typeof num);
+let user = { name: "Amit", age: 21 };   // Object
+let skills = ["HTML", "CSS", "JS"];     // Array
 
-// 3. BigInt
-let bigNum = 123456575241n;
-console.log(bigNum);
-console.log(typeof bigNum);
-
-// 4. Boolean
-let isTrue = true;
-console.log(isTrue);
-console.log(typeof isTrue);
-
-// 5. Undefined
-let userScore;
-console.log(userScore);
-console.log(typeof userScore);
-
-// 6. Null
-let emptyValue = null;
-console.log(emptyValue);
-console.log(typeof emptyValue);
-
-// 7. Symbol
-let sym = Symbol("id");
-console.log(sym);
-console.log(typeof sym);
-
-// 8. Object
-let obj = { name: "Raj", age: 22 };
-console.log(obj);
-console.log(typeof obj);
-
-let arr = [10, 20, 30];
-console.log(arr);
-console.log(typeof arr);
-
-function greet() {
-  return "Hi";
-}
-console.log(greet);
-console.log(typeof greet);
+console.log(typeof name);       // "string"
+console.log(typeof age);        // "number"
+console.log(typeof isActive);   // "boolean"
+console.log(typeof city);       // "undefined"
+console.log(typeof data);       // "object"
+console.log(typeof bigNum);     // "bigint"
+console.log(typeof id);         // "symbol"
+console.log(typeof user);       // "object"
+console.log(typeof skills);     // "object"
