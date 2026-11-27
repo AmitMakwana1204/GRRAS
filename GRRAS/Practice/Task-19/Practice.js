@@ -42,7 +42,7 @@ let noteMessage = deliveryNote ?? "Standard Delivery";
 // ==========================================
 // 4. OUTPUT (Template Literal સાથે)
 // ==========================================
-console.log(`Customer: ${firstName} (${cleanName})`);     //` ` (Backticks)
+console.log(`Customer: ${firstName} (${cleanName})`);     //    ` ` (Backticks)
 console.log(`Email Valid: ${isValidEmail} (${cleanEmail})`);
 console.log(`Original Price: ₹${orderAmount}`);
 console.log(`Discount Applied: -₹${discount}`);
